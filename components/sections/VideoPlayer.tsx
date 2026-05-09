@@ -99,29 +99,19 @@ export default function VideoPlayer() {
             </div>
           </>
         ) : (
-          <div
+          <video
+            src="/video/hero-showcase.mp4"
+            controls
+            autoPlay
             style={{
               position: 'absolute',
               inset: 0,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: '#0F172A',
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
             }}
-          >
-            <div style={{ textAlign: 'center', color: '#fff' }}>
-              <div style={{ fontSize: '48px', marginBottom: '16px' }}>▶</div>
-              <p
-                style={{
-                  fontFamily: 'Outfit, sans-serif',
-                  fontSize: '18px',
-                  color: '#94A3B8',
-                }}
-              >
-                Video player would render here
-              </p>
-            </div>
-          </div>
+            poster="/generated/lumivex-apex.webp"
+          />
         )}
       </div>
 
