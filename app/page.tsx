@@ -129,42 +129,40 @@ export default function HomePage() {
     <>
       <Navigation />
 
-      {/* Dark Hero — 对标 Apple Watch Ultra 首屏 */}
-      <section className="relative min-h-screen flex items-center overflow-hidden" style={{ background: 'linear-gradient(160deg, #1a1f2e 0%, #1e293b 30%, #0f172a 60%, #1a1f2e 100%)' }}>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white pointer-events-none" style={{ top: '85%' }} />
-        <div className="absolute top-1/3 -right-20 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-1/4 left-1/4 w-[300px] h-[300px] bg-accent/5 rounded-full blur-[80px] pointer-events-none" />
-
-        <div className="max-w-site mx-auto px-4 w-full relative z-10 pt-20 pb-32">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-            <div className="lg:w-1/2 text-center lg:text-left">
-              <span className="inline-block bg-white/10 text-accent-light font-outfit font-semibold text-xs tracking-widest uppercase px-4 py-2 rounded-full border border-white/10 mb-6 backdrop-blur-sm">
-                HealthCore AI v3.0
+      {/* Hero — 浅色渐变 + 侧向图片 */}
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden" style={{ background: 'radial-gradient(ellipse 90% 80% at 75% 40%, #E0F2FE 0%, #F8FAFC 45%, #FFFFFF 100%)' }}>
+        <div className="absolute -top-40 -right-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="max-w-site mx-auto relative z-10">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+            <div className="lg:w-1/2">
+              <span className="inline-block bg-accent-light text-accent font-outfit font-semibold text-xs tracking-wider uppercase px-3 py-1.5 rounded-full mb-5">
+                New: HealthCore AI v3.0
               </span>
-              <h1 className="font-outfit text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-none tracking-tight">
-                Know your body<br />
-                <span className="text-accent">better than anyone.</span>
+              <h1 className="font-outfit text-5xl sm:text-6xl lg:text-7xl font-extrabold text-text-primary leading-none tracking-tight">
+                Your Health.<br /><span className="text-accent">Decoded.</span>
               </h1>
-              <p className="text-lg sm:text-xl text-white/60 mt-6 leading-relaxed max-w-lg">
-                The only smartwatch with FDA-cleared ECG, cuffless blood pressure, and an AI that detects illness before you feel symptoms.
+              <p className="text-lg sm:text-xl text-text-muted mt-5 leading-relaxed max-w-lg">
+                21-day battery. Clinical sensors. AI that coaches you like a doctor who never sleeps.
               </p>
-              <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
-                <Link href="/products" className="bg-accent text-white font-outfit font-semibold px-8 py-4 rounded-xl hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/30 transition-all text-base">
-                  Explore
-                </Link>
-                <Link href="/products/lumivex-apex" className="bg-white/10 text-white font-outfit font-semibold px-8 py-4 rounded-xl border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all text-base backdrop-blur-sm">
-                  Buy — from $499
-                </Link>
+              <div className="flex flex-wrap gap-3 mt-7">
+                <Link href="/products" className="btn-accent text-base px-7 py-3.5">Explore</Link>
+                <Link href="/products/lumivex-apex" className="btn-outline text-base px-7 py-3.5">Buy — from $499</Link>
+              </div>
+              <div className="flex flex-wrap gap-x-6 gap-y-2 mt-7">
+                {['FDA-Cleared Sensors', '21-Day Battery', '5ATM Water Resistant', 'Free 30-Day Returns'].map((b, i) => (
+                  <span key={i} className="text-sm text-text-muted flex items-center gap-1.5">
+                    <span className="w-4 h-4 rounded-full bg-accent-light flex items-center justify-center">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#0EA5E9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    </span>
+                    {b}
+                  </span>
+                ))}
               </div>
             </div>
-            <div className="lg:w-1/2 flex justify-center">
+            <div className="mt-12 lg:mt-0 lg:w-1/2 flex justify-center">
               <div className="relative">
-                <div className="absolute inset-0 bg-accent/20 rounded-full blur-[100px] scale-90" />
-                <img
-                  src="/generated/hero-watch-dark.webp"
-                  alt="Lumivex Apex"
-                  className="relative z-10 max-w-full h-auto max-h-[600px] object-contain drop-shadow-[0_0_60px_rgba(14,165,233,0.3)]"
-                />
+                <div className="absolute inset-0 bg-accent/10 rounded-full blur-3xl scale-75" />
+                <img src="/generated/hero-apex-product.webp" alt="Lumivex Apex smartwatch" className="relative z-10 max-w-full h-auto max-h-[520px] object-contain drop-shadow-2xl" />
               </div>
             </div>
           </div>
