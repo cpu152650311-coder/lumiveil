@@ -15,14 +15,15 @@ interface StatsSectionProps {
 }
 
 export default function StatsSection({ title, subtitle, stats }: StatsSectionProps) {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    setVisible(true);
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) { setVisible(true); obs.disconnect(); }
+      if (entry.isIntersecting) { obs.disconnect(); }
     }, { threshold: 0.3 });
     obs.observe(el);
     return () => obs.disconnect();
@@ -37,7 +38,7 @@ export default function StatsSection({ title, subtitle, stats }: StatsSectionPro
           {stats.map((stat, i) => (
             <div key={i} className="bg-white rounded-card shadow-card border border-border-light p-6 text-center">
               {stat.icon && <div className="text-2xl mb-2">{stat.icon}</div>}
-              <div className={`font-outfit text-3xl sm:text-4xl font-bold text-accent transition-all duration-1000 ${visible ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="font-outfit text-3xl sm:text-4xl font-bold text-accent">
                 {stat.value}
               </div>
               <div className="text-sm text-text-muted mt-1">{stat.label}</div>
