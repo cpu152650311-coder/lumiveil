@@ -112,7 +112,6 @@ export default function AboutPage() {
         subtitle="200,000 people already know their bodies better. You're next."
         cta={[
           { label: 'Shop Now', href: '/products' },
-          { label: 'Follow Our Journey', href: '#' },
         ]}
         variant="light"
       />

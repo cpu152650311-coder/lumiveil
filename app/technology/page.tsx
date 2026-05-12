@@ -61,7 +61,7 @@ const techFeatures = [
   {
     title: 'HealthCore AI Engine',
     description: 'Trained on 2.4 million anonymized health profiles, our AI synthesizes your ECG, SpO2, heart rate variability, skin temperature, and activity data into a single daily Health Score (0-100). It detects subtle deviations from your personal baseline days before you feel symptoms — providing early warning for illness, overtraining, or sleep debt. The engine runs entirely on-device; your raw health data never leaves the watch without your explicit export.',
-    link: { label: 'Download technical whitepaper', href: '#' },
+    link: undefined,
     image: '/generated/technology-sensors.webp',
   },
   {

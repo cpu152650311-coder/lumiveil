@@ -148,7 +148,7 @@ export default function ContactPage() {
               <div className="text-3xl mb-3">💼</div>
               <h3 className="font-outfit font-bold text-text-primary mb-2">Careers</h3>
               <p className="text-sm text-text-muted mb-3">Join a team building the future of health wearables. 12 open roles.</p>
-              <a href="#" className="text-accent font-semibold text-sm hover:opacity-80">View Open Roles →</a>
+              <span className="text-text-muted text-sm">12 open roles — careers page coming soon</span>
             </div>
           </div>
         </div>

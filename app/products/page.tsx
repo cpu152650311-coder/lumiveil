@@ -15,7 +15,7 @@ const allProducts = [
     features: ['21-day battery (mixed use)', 'Grade 5 titanium + sapphire crystal', 'FDA-cleared ECG & AFib detection', 'Cuffless blood pressure monitoring', 'SpO2, skin temp, bioimpedance', 'Dual-band GPS L1+L5'],
     image: '/generated/lumivex-apex.webp',
     badge: 'Best Seller',
-    href: '/products#apex',
+    href: '/products/lumivex-apex',
   },
   {
     id: 'lumivex-apex-sport',
@@ -25,7 +25,7 @@ const allProducts = [
     features: ['18-day battery (22 days power save)', 'Titanium + ceramic bezel + sapphire', 'Multi-sport GPS: 40+ profiles', 'Running power + VO2 max + lactate threshold', 'MIL-STD-810H rated', 'Satellite SOS (Iridium)'],
     image: '/generated/lumivex-apex-sport.webp',
     badge: 'Adventure',
-    href: '/products#apex-sport',
+    href: '/products/lumivex-apex-sport',
   },
   {
     id: 'lumivex-pulse',
@@ -35,7 +35,7 @@ const allProducts = [
     features: ['14-day battery life', 'Aluminum alloy + tempered glass', 'ECG & AFib detection (FDA-cleared)', 'SpO2 & continuous heart rate', 'Sleep apnea risk scoring', 'Single-band GPS'],
     image: '/generated/lumivex-pulse.webp',
     badge: 'Most Popular',
-    href: '/products#pulse',
+    href: '/products/lumivex-pulse',
   },
   {
     id: 'lumivex-core',
@@ -45,7 +45,7 @@ const allProducts = [
     features: ['10-day battery life', 'Reinforced polymer + mineral glass', 'Continuous heart rate + SpO2', 'Sleep tracking with smart alarm', 'IP68 water resistance', 'iOS & Android compatible'],
     image: '/generated/lumivex-core.webp',
     badge: 'Best Value',
-    href: '/products#core',
+    href: '/products/lumivex-core',
   },
   {
     id: 'lumivex-pulse-kids',
@@ -55,7 +55,7 @@ const allProducts = [
     features: ['7-day battery life', 'Durable polymer, 20 colors', 'Heart rate & activity tracking', 'SOS emergency + GPS location', 'Parental dashboard app', 'IP68 waterproof — pool safe'],
     image: '/generated/lumivex-pulse-kids.webp',
     badge: 'Family',
-    href: '/products#pulse-kids',
+    href: '/products/lumivex-pulse-kids',
   },
 ];
 

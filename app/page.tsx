@@ -19,7 +19,7 @@ const homeProducts = [
     features: ['21-day battery life', 'FDA-cleared ECG & AFib detection', 'Cuffless blood pressure monitoring', 'Grade 5 titanium + sapphire crystal'],
     image: '/generated/lumivex-apex.webp',
     badge: 'Best Seller',
-    href: '/products#apex',
+    href: '/products/lumivex-apex',
   },
   {
     id: 'lumivex-pulse',
@@ -29,7 +29,7 @@ const homeProducts = [
     features: ['14-day battery life', 'ECG & AFib detection', 'SpO2 & continuous heart rate', 'Aluminum alloy + tempered glass'],
     image: '/generated/lumivex-pulse.webp',
     badge: 'Most Popular',
-    href: '/products#pulse',
+    href: '/products/lumivex-pulse',
   },
   {
     id: 'lumivex-core',
@@ -39,7 +39,7 @@ const homeProducts = [
     features: ['10-day battery life', 'Continuous heart rate + SpO2', 'Sleep tracking with smart alarm', 'Reinforced polymer + mineral glass'],
     image: '/generated/lumivex-core.webp',
     badge: 'Best Value',
-    href: '/products#core',
+    href: '/products/lumivex-core',
   },
 ];
 
