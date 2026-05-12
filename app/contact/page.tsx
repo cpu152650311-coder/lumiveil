@@ -5,6 +5,7 @@ import Navigation from '@/components/sections/Navigation';
 import Footer from '@/components/sections/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import FAQSection from '@/components/sections/FAQSection';
+import FloatingContact from '@/components/sections/FloatingContact';
 
 const faqItems = [
   { question: 'How do I set up my Lumivex for the first time?', answer: 'Download the Lumivex app from the App Store or Google Play. Turn on your watch by holding the side button for 3 seconds. Open the app, create an account, and follow the pairing instructions. The process takes about 3 minutes. Make sure Bluetooth is enabled on your phone.' },
@@ -155,6 +156,7 @@ export default function ContactPage() {
       </section>
 
       <Footer />
+      <FloatingContact label="Chat With Us" />
     </>
   );
 }

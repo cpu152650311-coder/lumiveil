@@ -6,6 +6,7 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import TeamGrid from '@/components/sections/TeamGrid';
 import PressSection from '@/components/sections/PressSection';
 import CTASection from '@/components/sections/CTASection';
+import FloatingContact from '@/components/sections/FloatingContact';
 
 const timelineMilestones = [
   { year: '2020', title: 'Founding at MIT Media Lab', description: 'Co-founders Dr. Anika Sharma and James Whitfield meet during a wearable health hackathon. They prototype a continuous ECG smartwatch that wins first place and seed interest from medical researchers.' },
@@ -117,6 +118,7 @@ export default function AboutPage() {
       />
 
       <Footer />
+      <FloatingContact label="Partner With Us" />
     </>
   );
 }

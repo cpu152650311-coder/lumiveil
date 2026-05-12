@@ -1,6 +1,5 @@
 import Navigation from '@/components/sections/Navigation';
 import Footer from '@/components/sections/Footer';
-import HeroSection from '@/components/sections/HeroSection';
 import StatsSection from '@/components/sections/StatsSection';
 import ProductGrid from '@/components/sections/ProductGrid';
 import FeatureAlternating from '@/components/sections/FeatureAlternating';
@@ -9,6 +8,8 @@ import TestimonialCards from '@/components/sections/TestimonialCards';
 import CTASection from '@/components/sections/CTASection';
 import NewsletterForm from '@/components/sections/NewsletterForm';
 import VideoPlayer from '@/components/sections/VideoPlayer';
+import FloatingContact from '@/components/sections/FloatingContact';
+import Link from 'next/link';
 
 const homeProducts = [
   {
@@ -101,18 +102,51 @@ export default function HomePage() {
     <>
       <Navigation />
 
-      <HeroSection
-        badge="New: HealthCore AI v3.0"
-        title="Your Health. Decoded."
-        subtitle="21-day battery. Clinical sensors. AI that coaches you like a doctor who never sleeps."
-        image="/generated/hero-apex-product.webp"
-        imageAlt="Lumivex Apex smartwatch with health dashboard"
-        cta={[
-          { label: 'Shop Now', href: '/products' },
-          { label: 'See How It Works', href: '/technology' },
-        ]}
-        trustBadges={['FDA-Cleared Sensors', '21-Day Battery', '5ATM Water Resistant', 'Free 30-Day Returns']}
-      />
+      {/* Hero — 径向渐变 + 光晕 */}
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden" style={{ background: 'radial-gradient(ellipse 90% 80% at 75% 40%, #E0F2FE 0%, #F8FAFC 45%, #FFFFFF 100%)' }}>
+        {/* 装饰光晕 */}
+        <div className="absolute -top-40 -right-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-accent/8 rounded-full blur-2xl pointer-events-none" />
+
+        <div className="max-w-site mx-auto relative z-10">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+            <div className="lg:w-1/2">
+              <span className="inline-block bg-accent-light text-accent font-outfit font-semibold text-xs tracking-wider uppercase px-3 py-1.5 rounded-full mb-5">
+                New: HealthCore AI v3.0
+              </span>
+              <h1 className="font-outfit text-5xl sm:text-6xl lg:text-7xl font-extrabold text-text-primary leading-none tracking-tight">
+                Your Health.<br /><span className="text-accent">Decoded.</span>
+              </h1>
+              <p className="text-lg sm:text-xl text-text-muted mt-5 leading-relaxed max-w-lg">
+                21-day battery. Clinical sensors. AI that coaches you like a doctor who never sleeps.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-7">
+                <Link href="/products" className="btn-accent text-base px-7 py-3.5">Shop Now</Link>
+                <Link href="/technology" className="btn-outline text-base px-7 py-3.5">See How It Works</Link>
+              </div>
+              <div className="flex flex-wrap gap-x-6 gap-y-2 mt-7">
+                {['FDA-Cleared Sensors', '21-Day Battery', '5ATM Water Resistant', 'Free 30-Day Returns'].map((b, i) => (
+                  <span key={i} className="text-sm text-text-muted flex items-center gap-1.5">
+                    <span className="w-4 h-4 rounded-full bg-accent-light flex items-center justify-center">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#0EA5E9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    </span>
+                    {b}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="mt-12 lg:mt-0 lg:w-1/2 flex justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-accent/10 rounded-full blur-3xl scale-75" />
+                <img src="/generated/hero-apex-product.webp" alt="Lumivex Apex smartwatch" className="relative z-10 max-w-full h-auto max-h-[520px] object-contain drop-shadow-2xl" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 底部波浪分割 */}
+        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-b from-transparent to-white pointer-events-none" />
+      </section>
 
       <StatsSection
         title="Numbers That Matter"
@@ -137,8 +171,10 @@ export default function HomePage() {
         features={homeFeatures}
       />
 
-      <section className="bg-white py-20 px-4">
-        <div className="max-w-site mx-auto">
+      {/* Video — 带装饰底纹 */}
+      <section className="relative bg-bg-main py-20 px-4">
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent pointer-events-none h-32" />
+        <div className="max-w-site mx-auto relative">
           <h2 className="font-outfit text-3xl sm:text-4xl font-bold text-text-primary text-center">See Lumivex in Motion</h2>
           <p className="text-text-muted text-lg text-center mt-2 mb-10">60 seconds. Everything you need to know.</p>
           <VideoPlayer />
@@ -159,7 +195,7 @@ export default function HomePage() {
         testimonials={testimonials}
       />
 
-      <section className="bg-bg-main py-20 px-4">
+      <section className="bg-white py-20 px-4">
         <NewsletterForm />
       </section>
 
@@ -179,6 +215,7 @@ export default function HomePage() {
       />
 
       <Footer />
+      <FloatingContact label="Contact Sales" />
     </>
   );
 }

@@ -6,6 +6,7 @@ import FeatureAlternating from '@/components/sections/FeatureAlternating';
 import TimelineSection from '@/components/sections/TimelineSection';
 import StatsSection from '@/components/sections/StatsSection';
 import CTASection from '@/components/sections/CTASection';
+import FloatingContact from '@/components/sections/FloatingContact';
 
 const aiFeatures = [
   {
@@ -136,6 +137,7 @@ export default function TechnologyPage() {
       />
 
       <Footer />
+      <FloatingContact label="Ask an Engineer" />
     </>
   );
 }

@@ -5,6 +5,7 @@ import ProductGrid from '@/components/sections/ProductGrid';
 import ComparisonTable from '@/components/sections/ComparisonTable';
 import FAQSection from '@/components/sections/FAQSection';
 import CTASection from '@/components/sections/CTASection';
+import FloatingContact from '@/components/sections/FloatingContact';
 
 const allProducts = [
   {
@@ -140,6 +141,7 @@ export default function ProductsPage() {
       />
 
       <Footer />
+      <FloatingContact label="Need Help Choosing?" />
     </>
   );
 }
