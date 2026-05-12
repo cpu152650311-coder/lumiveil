@@ -1,43 +1,10 @@
 import Navigation from '@/components/sections/Navigation';
 import Footer from '@/components/sections/Footer';
 import ProductGrid from '@/components/sections/ProductGrid';
-import FeatureAlternating from '@/components/sections/FeatureAlternating';
-import ComparisonTable from '@/components/sections/ComparisonTable';
-import TestimonialCards from '@/components/sections/TestimonialCards';
 import CTASection from '@/components/sections/CTASection';
-import NewsletterForm from '@/components/sections/NewsletterForm';
 import VideoPlayer from '@/components/sections/VideoPlayer';
-import FeatureCarousel from '@/components/sections/FeatureCarousel';
-import ParallaxBanner from '@/components/sections/ParallaxBanner';
 import FloatingContact from '@/components/sections/FloatingContact';
 import Link from 'next/link';
-
-const carouselSlides = [
-  {
-    icon: '⚡',
-    title: '21-Day Battery',
-    subtitle: 'The longest battery life in a clinical-grade smartwatch. One charge powers three weeks of continuous health monitoring, GPS tracking, and sleep analysis.',
-    stat: '21 days',
-    image: '/generated/hero-apex-product.webp',
-    imageAlt: 'Lumivex Apex smartwatch',
-  },
-  {
-    icon: '💓',
-    title: 'FDA-Cleared ECG',
-    subtitle: 'Continuous electrocardiogram monitoring with 98.2% AFib detection sensitivity. Your watch analyzes every heartbeat and alerts you before symptoms appear.',
-    stat: '98.2%',
-    image: '/generated/technology-sensors.webp',
-    imageAlt: 'ECG sensor technology',
-  },
-  {
-    icon: '💧',
-    title: '5ATM Water Resistance',
-    subtitle: 'Tested to 50 meters. Track your swims, dive into the ocean, or shower without a second thought. Built for life in and out of the water.',
-    stat: '50m',
-    image: '/generated/lifestyle-runner.webp',
-    imageAlt: 'Lumivex during outdoor activity',
-  },
-];
 
 const homeProducts = [
   {
@@ -72,170 +39,113 @@ const homeProducts = [
   },
 ];
 
-const homeFeatures = [
-  {
-    title: 'Continuous ECG & Atrial Fibrillation Detection',
-    description: 'FDA-cleared single-lead ECG continuously monitors your heart rhythm. The AI analyzes every beat for AFib, irregular rhythm notifications, and early-warning anomalies. Clinical studies show 98.2% sensitivity in AFib detection.',
-    link: { label: 'See the science', href: '/technology' },
-    image: '/generated/technology-sensors.webp',
-  },
-  {
-    title: 'Blood Pressure & SpO2 Monitoring',
-    description: 'Cuffless blood pressure via pulse transit time algorithm, clinically validated against arterial line measurements. Continuous SpO2 with ±1% accuracy tracks oxygen levels day and night, with automatic sleep apnea risk scoring.',
-    link: { label: 'How it works', href: '/technology' },
-    image: '/generated/lifestyle-wellness.webp',
-  },
-  {
-    title: 'HealthCore AI — Your 24/7 Medical Companion',
-    description: 'HealthCore AI synthesizes 72 hours of biometric history to generate daily readiness scores, recovery recommendations, and anomaly alerts. It learns your personal baseline — not population averages.',
-    link: { label: 'Explore AI engine', href: '/technology' },
-    image: '/generated/lifestyle-runner.webp',
-  },
-];
-
-const comparisonColumns = ['Feature', 'Lumivex Apex', 'Apple Watch Ultra 2', 'Garmin Fenix 8'];
-const comparisonRows = [
-  { feature: 'Battery Life', lumivex: '21 days', competitors: ['36 hours', '16 days'] },
-  { feature: 'Blood Pressure', lumivex: true, competitors: [false, false] },
-  { feature: 'ECG', lumivex: true, competitors: [true, false] },
-  { feature: 'Price', lumivex: '$499', competitors: ['$799', '$699'] },
-  { feature: 'AI Health Coaching', lumivex: true, competitors: ['Partial', false] },
-  { feature: 'Sleep Apnea Detection', lumivex: true, competitors: [true, false] },
-];
-
-const testimonials = [
-  {
-    quote: 'I recommended Lumivex to three patients after it detected their AFib before I did in clinic.',
-    name: 'Dr. Priya Mehta',
-    context: 'Cardiologist, Stanford Medicine',
-    rating: 5,
-  },
-  {
-    quote: 'I ran a 100-mile race and my Lumivex Apex still had 40% battery. The GPS track was flawless.',
-    name: 'Marcus Okafor',
-    context: 'Ultra-marathoner',
-    rating: 5,
-  },
-  {
-    quote: 'My sleep score dropped 18 points before a burnout episode. Lumivex caught the pattern two weeks early.',
-    name: 'Sarah Lin',
-    context: 'Startup Founder',
-    rating: 5,
-  },
-];
-
 export default function HomePage() {
   return (
     <>
       <Navigation />
 
-      {/* Hero — 浅色渐变 + 侧向图片 */}
-      <section className="relative pt-32 pb-20 px-4 overflow-hidden" style={{ background: 'radial-gradient(ellipse 90% 80% at 75% 40%, #E0F2FE 0%, #F8FAFC 45%, #FFFFFF 100%)' }}>
-        <div className="absolute -top-40 -right-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
-        <div className="max-w-site mx-auto relative z-10">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+      {/* 1 — Hero */}
+      <section className="relative pt-32 pb-24 px-6" style={{ background: 'radial-gradient(ellipse 90% 80% at 75% 40%, #E0F2FE 0%, #F8FAFC 45%, #FFFFFF 100%)' }}>
+        <div className="max-w-site mx-auto">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-20">
             <div className="lg:w-1/2">
-              <span className="inline-block bg-accent-light text-accent font-outfit font-semibold text-xs tracking-wider uppercase px-3 py-1.5 rounded-full mb-5">
-                New: HealthCore AI v3.0
+              <span className="inline-block bg-accent-light text-accent font-outfit font-semibold text-xs tracking-wider uppercase px-3 py-1.5 rounded-full mb-6">
+                HealthCore AI v3.0 — Now with trend forecasting
               </span>
               <h1 className="font-outfit text-5xl sm:text-6xl lg:text-7xl font-extrabold text-text-primary leading-none tracking-tight">
-                Your Health.<br /><span className="text-accent">Decoded.</span>
+                Know your body<br />
+                <span className="text-accent">better than anyone.</span>
               </h1>
-              <p className="text-lg sm:text-xl text-text-muted mt-5 leading-relaxed max-w-lg">
-                21-day battery. Clinical sensors. AI that coaches you like a doctor who never sleeps.
+              <p className="text-lg sm:text-xl text-text-muted mt-6 leading-relaxed max-w-lg">
+                FDA-cleared ECG. Cuffless blood pressure. 21-day battery. An AI that learns your body&apos;s rhythm and alerts you before something&apos;s wrong.
               </p>
-              <div className="flex flex-wrap gap-3 mt-7">
-                <Link href="/products" className="btn-accent text-base px-7 py-3.5">Explore</Link>
-                <Link href="/products/lumivex-apex" className="btn-outline text-base px-7 py-3.5">Buy — from $499</Link>
-              </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 mt-7">
-                {['FDA-Cleared Sensors', '21-Day Battery', '5ATM Water Resistant', 'Free 30-Day Returns'].map((b, i) => (
-                  <span key={i} className="text-sm text-text-muted flex items-center gap-1.5">
-                    <span className="w-4 h-4 rounded-full bg-accent-light flex items-center justify-center">
-                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="#0EA5E9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                    </span>
-                    {b}
-                  </span>
-                ))}
+              <div className="flex flex-wrap gap-4 mt-8">
+                <Link href="/products" className="btn-accent text-base px-8 py-3.5">
+                  Explore Lumivex
+                </Link>
+                <Link href="/products/lumivex-apex" className="btn-outline text-base px-8 py-3.5">
+                  Buy Apex — $499
+                </Link>
               </div>
             </div>
-            <div className="mt-12 lg:mt-0 lg:w-1/2 flex justify-center">
-              <div className="relative">
-                <div className="absolute inset-0 bg-accent/10 rounded-full blur-3xl scale-75" />
-                <img src="/generated/hero-apex-product.webp" alt="Lumivex Apex smartwatch" className="relative z-10 max-w-full h-auto max-h-[520px] object-contain drop-shadow-2xl" />
-              </div>
+            <div className="mt-14 lg:mt-0 lg:w-1/2 flex justify-center">
+              <img
+                src="/generated/hero-apex-product.webp"
+                alt="Lumivex Apex smartwatch on white background"
+                className="max-w-full h-auto max-h-[520px] object-contain drop-shadow-2xl"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Feature Carousel */}
-      <FeatureCarousel slides={carouselSlides} />
-
-      {/* Material Parallax */}
-      <ParallaxBanner
-        bgImage="/generated/titanium-texture.webp"
-        feature="Materials"
-        title="Grade 5 Titanium. Lighter than steel. Stronger than aluminum."
-        subtitle="Every Lumivex Apex is machined from a single block of aerospace-grade titanium. Sapphire crystal. Ceramic bezel. Built to outlast you."
-      />
-
-      {/* Products */}
+      {/* 2 — Products */}
+      <section className="bg-white py-24 px-6">
+        <div className="max-w-site mx-auto">
+          <p className="font-outfit text-sm uppercase tracking-widest text-text-muted text-center mb-3">The Lineup</p>
+          <h2 className="font-outfit text-3xl sm:text-4xl font-bold text-text-primary text-center">
+            Three watches. One mission.
+          </h2>
+        </div>
+      </section>
       <ProductGrid
-        title="Choose Your Lumivex"
-        subtitle="One mission — know your body better than anyone."
+        title=""
+        subtitle=""
         products={homeProducts}
       />
 
-      {/* Health Features */}
-      <FeatureAlternating
-        title="HealthCore AI — Your 24/7 Medical Companion"
-        subtitle="Not just data. Diagnosis-grade intelligence."
-        features={homeFeatures}
-      />
-
-      {/* Video */}
-      <section className="bg-bg-main py-20 px-4">
+      {/* 3 — Trust: 一个强证言 + 两列关键数据 */}
+      <section className="bg-white py-24 px-6">
         <div className="max-w-site mx-auto">
-          <h2 className="font-outfit text-3xl sm:text-4xl font-bold text-text-primary text-center">See Lumivex in Motion</h2>
-          <p className="text-text-muted text-lg text-center mt-2 mb-10">60 seconds. Everything you need to know.</p>
+          <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+            <div className="lg:w-1/2">
+              <p className="font-outfit text-sm uppercase tracking-widest text-text-muted mb-4">Trusted by doctors</p>
+              <blockquote className="font-outfit text-2xl sm:text-3xl text-text-primary leading-relaxed font-semibold">
+                &ldquo;I recommended Lumivex to three patients after it detected their AFib before I did in clinic. The ECG accuracy is genuinely impressive.&rdquo;
+              </blockquote>
+              <cite className="block mt-6 not-italic">
+                <span className="font-outfit font-bold text-text-primary">Dr. Priya Mehta</span>
+                <span className="text-text-muted text-sm ml-2">Cardiologist, Stanford Medicine</span>
+              </cite>
+            </div>
+            <div className="lg:w-1/2">
+              <p className="font-outfit text-sm uppercase tracking-widest text-text-muted mb-6">Why Lumivex</p>
+              <ul className="space-y-6">
+                {[
+                  { value: '21 days', label: 'Battery life — the longest in any clinical-grade smartwatch. Three weeks on a single charge.' },
+                  { value: '98.2%', label: 'AFib detection sensitivity — FDA-cleared single-lead ECG with clinical validation.' },
+                  { value: '5ATM', label: 'Water resistance to 50 meters. Swim, dive, shower. No compromises.' },
+                  { value: '2 hours', label: 'Average response time from our support team. Real humans, not chatbots.' },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <span className="font-outfit text-3xl font-extrabold text-accent">{item.value}</span>
+                    <p className="text-text-muted mt-1 leading-relaxed">{item.label}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4 — Video: 紧凑 */}
+      <section className="bg-bg-main py-24 px-6">
+        <div className="max-w-site mx-auto">
+          <p className="font-outfit text-sm uppercase tracking-widest text-text-muted text-center mb-3">Watch the film</p>
+          <h2 className="font-outfit text-3xl sm:text-4xl font-bold text-text-primary text-center mb-10">
+            Lumivex Apex in motion
+          </h2>
           <VideoPlayer />
         </div>
       </section>
 
-      {/* Comparison */}
-      <ComparisonTable
-        title="How Lumivex Stacks Up"
-        subtitle="We'll let the specs speak."
-        columns={comparisonColumns}
-        rows={comparisonRows}
-        cta={{ label: 'Shop Lumivex Apex →', href: '/products/lumivex-apex' }}
-      />
-
-      {/* Testimonials */}
-      <TestimonialCards
-        title="Worn by Thousands. Trusted by Doctors."
-        subtitle="Real people. Real results."
-        testimonials={testimonials}
-      />
-
-      {/* Newsletter */}
-      <section className="bg-white py-20 px-4">
-        <NewsletterForm />
-      </section>
-
-      {/* Final CTA */}
+      {/* 5 — CTA */}
       <CTASection
-        title="Your Health Journey Starts Today"
-        subtitle="Free shipping. 30-day trial. No-questions return."
+        title="30-day risk-free trial"
+        subtitle="Free shipping. No-questions return. 2-year warranty. If it doesn't change how you understand your health, send it back."
         cta={[
           { label: 'Shop All Watches', href: '/products' },
-          { label: 'Compare Models', href: '/products#comparison' },
-        ]}
-        trustBadges={[
-          { icon: '🛡️', label: '30-Day Guarantee' },
-          { icon: '🚚', label: 'Free Shipping' },
-          { icon: '⭐', label: '4.9 Rating' },
+          { label: 'Compare Models', href: '/products' },
         ]}
         variant="accent"
       />

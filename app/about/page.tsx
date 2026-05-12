@@ -3,7 +3,6 @@ import Footer from '@/components/sections/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import TimelineSection from '@/components/sections/TimelineSection';
 import FeatureGrid from '@/components/sections/FeatureGrid';
-import TeamGrid from '@/components/sections/TeamGrid';
 import PressSection from '@/components/sections/PressSection';
 import CTASection from '@/components/sections/CTASection';
 import FloatingContact from '@/components/sections/FloatingContact';
@@ -96,11 +95,40 @@ export default function AboutPage() {
         variant="cards"
       />
 
-      <TeamGrid
-        title="Meet the Team"
-        subtitle="Biomedical engineers, product designers, and health nerds."
-        members={teamMembers}
-      />
+      {/* Team — 不对称网格：创始人大卡 + 其他人小卡 */}
+      <section className="bg-bg-main py-24 px-6">
+        <div className="max-w-site mx-auto">
+          <p className="font-outfit text-sm uppercase tracking-widest text-text-muted text-center mb-3">Our Team</p>
+          <h2 className="font-outfit text-3xl sm:text-4xl font-bold text-text-primary text-center mb-2">Meet the people behind Lumivex</h2>
+          <p className="text-text-muted text-lg text-center mb-14">Biomedical engineers, product designers, and health nerds.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {teamMembers.map((member, i) => {
+              const isFounder = i < 2;
+              return (
+                <div
+                  key={i}
+                  className={`bg-white rounded-2xl border border-border-light overflow-hidden hover:shadow-card transition-shadow ${
+                    isFounder ? 'lg:col-span-2' : ''
+                  }`}
+                >
+                  <div className={`flex ${isFounder ? 'flex-row items-center' : 'flex-col'} p-6 gap-5`}>
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className={`rounded-xl object-cover ${isFounder ? 'w-24 h-24 shrink-0' : 'w-20 h-20 mx-auto'}`}
+                    />
+                    <div className={isFounder ? '' : 'text-center'}>
+                      <h3 className={`font-outfit font-bold text-text-primary ${isFounder ? 'text-xl' : 'text-base'}`}>{member.name}</h3>
+                      <p className="text-sm text-accent font-semibold mt-0.5">{member.title}</p>
+                      <p className="text-sm text-text-muted mt-2 leading-relaxed">{member.bio}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
       <PressSection
         title="Lumivex in the Press"
