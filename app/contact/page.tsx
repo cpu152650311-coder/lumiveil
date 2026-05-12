@@ -3,21 +3,26 @@
 import { useState, FormEvent } from 'react';
 import Navigation from '@/components/sections/Navigation';
 import Footer from '@/components/sections/Footer';
-import HeroSection from '@/components/sections/HeroSection';
 import FAQSection from '@/components/sections/FAQSection';
 import FloatingContact from '@/components/sections/FloatingContact';
 
 const faqItems = [
   { question: 'How do I set up my Lumivex for the first time?', answer: 'Download the Lumivex app from the App Store or Google Play. Turn on your watch by holding the side button for 3 seconds. Open the app, create an account, and follow the pairing instructions. The process takes about 3 minutes. Make sure Bluetooth is enabled on your phone.' },
-  { question: 'My watch isn\'t syncing — what should I do?', answer: 'First, ensure Bluetooth is enabled and your watch is within range (10 meters). Open the Lumivex app and pull down to force sync. If that doesn\'t work, restart both your watch (hold side button 10 seconds) and phone. If syncing still fails after restart, check that your app is updated to the latest version in the app store.' },
+  { question: 'My watch isn\'t syncing — what should I do?', answer: 'First, ensure Bluetooth is enabled and your watch is within range (10 meters). Open the Lumivex app and pull down to force sync. If that doesn\'t work, restart both your watch (hold side button 10 seconds) and phone. If syncing still fails after restart, check that your app is updated.' },
   { question: 'How do I return or exchange my order?', answer: 'Returns are free within 30 days of delivery. Visit lumivex.com/returns, enter your order number and email, and you\'ll receive a prepaid return label instantly. Exchanges for a different model or color are also free — we ship your replacement as soon as the return is scanned by the carrier.' },
-  { question: 'Is my health data stored securely?', answer: 'Yes. All health data is encrypted at rest (AES-256) and in transit (TLS 1.3). HealthCore AI processing runs entirely on-device — raw biometric data never leaves your watch. When you choose to export data to your doctor, you control exactly what is shared and can revoke access at any time. Lumivex is GDPR and HIPAA compliant.' },
-  { question: 'How do I update the firmware?', answer: 'Firmware updates are delivered through the Lumivex app. When a new update is available, you\'ll receive a notification. Ensure your watch has at least 30% battery and is connected to Wi-Fi or Bluetooth. Updates typically take 5-10 minutes. Your health data is preserved across updates.' },
-  { question: 'Can I use Lumivex without a smartphone?', answer: 'Initial setup requires a smartphone (iOS 16+ or Android 12+). After setup, the watch can operate independently for up to 7 days — tracking health metrics, displaying time, and storing data. However, firmware updates, data export, and detailed health reports require the companion app.' },
+  { question: 'Is my health data stored securely?', answer: 'Yes. All health data is encrypted at rest (AES-256) and in transit (TLS 1.3). HealthCore AI processing runs entirely on-device — raw biometric data never leaves your watch. Lumivex is GDPR and HIPAA compliant.' },
+  { question: 'How do I update the firmware?', answer: 'Firmware updates are delivered through the Lumivex app. When a new update is available, you\'ll receive a notification. Ensure your watch has at least 30% battery. Updates typically take 5-10 minutes. Your health data is preserved across updates.' },
+  { question: 'Can I use Lumivex without a smartphone?', answer: 'Initial setup requires a smartphone (iOS 16+ or Android 12+). After setup, the watch can operate independently for up to 7 days — tracking health metrics, displaying time, and storing data.' },
   { question: 'What does the AI coaching subscription include?', answer: 'HealthCore AI coaching ($9.99/month or $89.99/year) includes: daily readiness scores, 7-day trend forecasting, personalized recovery recommendations, sleep optimization insights, anomaly alerts with context, and doctor-exportable PDF reports. One year free with Apex models, six months with Pulse.' },
-  { question: 'How do I export my health data to my doctor?', answer: 'Open the Lumivex app, go to Health Data → Export → Clinical Report. Select the date range and metrics to include. The app generates a professional PDF with ECG strips, blood pressure trends, SpO2 patterns, and sleep summaries formatted for clinical review. Share via email, AirDrop, or print directly.' },
-  { question: 'Is Lumivex compatible with Apple Health and Google Fit?', answer: 'Yes. Lumivex syncs bi-directionally with Apple Health and Google Health Connect. You can also connect to Strava, MyFitnessPal, and TrainingPeaks. All integrations are opt-in — you choose exactly which data to share with each service.' },
-  { question: 'My band is causing skin irritation — what should I do?', answer: 'Our fluoro-elastomer bands are dermatologist-tested and hypoallergenic, but individual sensitivities vary. We recommend: (1) Clean the band with mild soap and water weekly, (2) Wear the watch slightly looser during sleep, (3) Switch wrists occasionally. If irritation persists, contact support for a free replacement band in an alternative material (woven nylon or leather).' },
+  { question: 'How do I export my health data to my doctor?', answer: 'Open the Lumivex app, go to Health Data → Export → Clinical Report. Select the date range and metrics to include. The app generates a professional PDF formatted for clinical review. Share via email, AirDrop, or print directly.' },
+  { question: 'Is Lumivex compatible with Apple Health and Google Fit?', answer: 'Yes. Lumivex syncs bi-directionally with Apple Health and Google Health Connect. You can also connect to Strava, MyFitnessPal, and TrainingPeaks. All integrations are opt-in.' },
+  { question: 'My band is causing skin irritation — what should I do?', answer: 'Clean the band with mild soap and water weekly. Wear the watch slightly looser during sleep. Switch wrists occasionally. If irritation persists, contact support for a free replacement band in an alternative material.' },
+];
+
+const channelCards = [
+  { icon: '💬', title: 'Live Chat', subtitle: 'Online now', desc: 'Fastest option for quick questions.', btn: 'Start Chat', color: 'bg-green-50 border-green-200', dot: 'bg-green-500' },
+  { icon: '📧', title: 'Email Us', subtitle: '< 2 hour response', desc: 'hello@lumivex.com', btn: 'Copy Email', color: 'bg-accent-light border-accent/20', dot: 'bg-accent' },
+  { icon: '📞', title: 'Call Us', subtitle: 'Mon–Fri, 9am–6pm EST', desc: '+1 (855) LUMIVEX', btn: 'Call Now', color: 'bg-bg-main border-border-light', dot: 'bg-text-muted' },
 ];
 
 export default function ContactPage() {
@@ -33,93 +38,112 @@ export default function ContactPage() {
     <>
       <Navigation />
 
-      <HeroSection
-        title="We're Here to Help"
-        subtitle="Real humans. Average response time: under 2 hours."
-        breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Contact', href: '/contact' }]}
-        compact
-      >
-        <div className="flex flex-wrap gap-3 mt-6">
-          <span className="inline-flex items-center gap-2 bg-accent text-white font-outfit font-semibold text-sm px-4 py-2.5 rounded-card">
-            <span className="w-2 h-2 bg-green-300 rounded-full" /> Live Chat — Online Now
-          </span>
-          <span className="inline-flex items-center gap-2 border-2 border-border-light text-text-primary font-outfit font-semibold text-sm px-4 py-2.5 rounded-card">
-            📧 Email — hello@lumivex.com
-          </span>
-          <span className="inline-flex items-center gap-2 border-2 border-border-light text-text-primary font-outfit font-semibold text-sm px-4 py-2.5 rounded-card">
-            📞 Phone — Mon-Fri 9am-6pm EST
-          </span>
-        </div>
-      </HeroSection>
+      {/* Hero */}
+      <section className="pt-32 pb-12 px-4 bg-bg-main">
+        <div className="max-w-site mx-auto text-center">
+          <nav className="mb-4 text-sm text-text-muted flex gap-2 justify-center">
+            <a href="/" className="hover:text-accent transition-colors">Home</a><span>/</span><span className="text-text-primary">Contact</span>
+          </nav>
+          <h1 className="font-outfit text-4xl sm:text-5xl font-extrabold text-text-primary tracking-tight">
+            We&apos;re here to help
+          </h1>
+          <p className="text-lg text-text-muted mt-3 max-w-xl mx-auto">
+            Real humans. Average response time under 2 hours.
+          </p>
 
+          {/* Channel Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10 max-w-3xl mx-auto">
+            {channelCards.map((card, i) => (
+              <div key={i} className={`rounded-2xl border p-5 ${card.color} text-center hover:shadow-card transition-shadow`}>
+                <span className="text-3xl block mb-2">{card.icon}</span>
+                <div className="flex items-center justify-center gap-1.5 mb-1">
+                  <span className={`w-2 h-2 ${card.dot} rounded-full`} />
+                  <span className="text-xs font-semibold text-text-muted">{card.subtitle}</span>
+                </div>
+                <h3 className="font-outfit font-bold text-text-primary">{card.title}</h3>
+                <p className="text-xs text-text-muted mt-1 mb-3">{card.desc}</p>
+                <button className="btn-accent text-xs px-4 py-2 w-full">{card.btn}</button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form + Support Info */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-site mx-auto">
-          <div className="flex flex-col lg:flex-row gap-10">
+          <div className="flex flex-col lg:flex-row gap-12">
+            {/* Form — Left 60% */}
             <div className="lg:w-3/5">
-              <h2 className="font-outfit text-2xl font-bold text-text-primary mb-2">Send Us a Message</h2>
-              <p className="text-text-muted mb-6">We respond within 2 hours during business hours.</p>
+              <h2 className="font-outfit text-2xl font-bold text-text-primary mb-1">Send us a message</h2>
+              <p className="text-text-muted text-sm mb-6">We respond within 2 hours during business hours.</p>
 
               {submitted ? (
-                <div className="bg-green-50 border border-green-200 rounded-card p-8 text-center">
-                  <div className="text-4xl mb-3">✅</div>
-                  <h3 className="font-outfit text-xl font-bold text-green-800">Message Sent!</h3>
-                  <p className="text-green-700 mt-2">We typically respond within 2 hours. Check your email for a confirmation.</p>
+                <div className="bg-green-50 border border-green-200 rounded-2xl p-10 text-center">
+                  <div className="text-5xl mb-4">✅</div>
+                  <h3 className="font-outfit text-2xl font-bold text-green-800 mb-2">Message Sent</h3>
+                  <p className="text-green-700">We typically respond within 2 hours. Check your email for a confirmation.</p>
+                  <button onClick={() => setSubmitted(false)} className="btn-outline mt-6 text-sm">Send another message</button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-1">Name *</label>
-                      <input id="name" type="text" required value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })} className="w-full px-4 py-3 rounded-card border border-border-light focus:border-accent focus:outline-none transition-colors" />
+                      <input id="name" name="name" type="text" required value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all" placeholder="Your name" />
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-1">Email *</label>
-                      <input id="email" type="email" required value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })} className="w-full px-4 py-3 rounded-card border border-border-light focus:border-accent focus:outline-none transition-colors" />
+                      <input id="email" name="email" type="email" required value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all" placeholder="you@example.com" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="order" className="block text-sm font-medium text-text-primary mb-1">Order Number (optional)</label>
-                      <input id="order" type="text" value={formState.orderNumber} onChange={(e) => setFormState({ ...formState, orderNumber: e.target.value })} className="w-full px-4 py-3 rounded-card border border-border-light focus:border-accent focus:outline-none transition-colors" />
+                      <input id="order" name="orderNumber" type="text" value={formState.orderNumber} onChange={(e) => setFormState({ ...formState, orderNumber: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all" placeholder="LUM-XXXXX" />
                     </div>
                     <div>
                       <label htmlFor="topic" className="block text-sm font-medium text-text-primary mb-1">Topic</label>
-                      <select id="topic" value={formState.topic} onChange={(e) => setFormState({ ...formState, topic: e.target.value })} className="w-full px-4 py-3 rounded-card border border-border-light focus:border-accent focus:outline-none transition-colors bg-white">
-                        {['Order Status', 'Technical Support', 'Returns', 'Partnership', 'Press', 'General'].map((t) => (
-                          <option key={t}>{t}</option>
-                        ))}
+                      <select id="topic" name="topic" value={formState.topic} onChange={(e) => setFormState({ ...formState, topic: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all bg-white">
+                        {['General Inquiry', 'Order Status', 'Technical Support', 'Returns & Exchanges', 'Partnership', 'Press & Media'].map((t) => (<option key={t}>{t}</option>))}
                       </select>
                     </div>
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-1">Message *</label>
-                    <textarea id="message" rows={5} required value={formState.message} onChange={(e) => setFormState({ ...formState, message: e.target.value })} className="w-full px-4 py-3 rounded-card border border-border-light focus:border-accent focus:outline-none transition-colors resize-y" />
+                    <textarea id="message" name="message" rows={5} required value={formState.message} onChange={(e) => setFormState({ ...formState, message: e.target.value })}
+                      className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all resize-y" placeholder="Tell us how we can help..." />
                   </div>
-                  <button type="submit" className="btn-accent">Send Message</button>
+                  <button type="submit" className="btn-accent text-base px-8 py-3.5">Send Message</button>
                 </form>
               )}
             </div>
 
-            <aside className="lg:w-2/5 space-y-4">
+            {/* Support Sidebar — Right 40% */}
+            <div className="lg:w-2/5 space-y-5">
               {[
-                { icon: '💬', title: 'Live Chat', status: 'Online', desc: 'Fastest option for quick questions.', btn: 'Start Chat', accent: true },
-                { icon: '📧', title: 'Email Support', status: '< 2 hrs', desc: 'hello@lumivex.com', btn: 'Copy Email', accent: false },
-                { icon: '📞', title: 'Phone Support', status: '9am-6pm EST', desc: '+1 (855) LUMIVEX', btn: 'Call Now', accent: false },
-                { icon: '👥', title: 'Community Forum', status: '31K members', desc: 'Get help from fellow Lumivex users.', btn: 'Visit Forum →', accent: false },
-              ].map((card, i) => (
-                <div key={i} className="bg-bg-main rounded-card border border-border-light shadow-card p-5">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="text-2xl">{card.icon}</span>
-                    <div>
-                      <h3 className="font-outfit font-bold text-text-primary">{card.title}</h3>
-                      <span className="text-xs text-accent font-semibold">{card.status}</span>
+                { icon: '💬', title: 'Live Chat', status: 'Online now', desc: 'Fastest way to get help', action: 'Start Chat', accent: true },
+                { icon: '📧', title: 'Email Support', status: 'Average < 2 hours', desc: 'hello@lumivex.com', action: 'Copy', accent: false },
+                { icon: '📞', title: 'Phone Support', status: 'Mon–Fri 9am–6pm EST', desc: '+1 (855) 586-4839', action: 'Call', accent: false },
+                { icon: '🌐', title: 'Community Forum', status: '31,000+ members', desc: 'Ask the Lumivex community', action: 'Visit Forum →', accent: false },
+              ].map((item, i) => (
+                <div key={i} className="bg-bg-main rounded-xl border border-border-light p-5 flex items-center gap-4 hover:shadow-card transition-shadow">
+                  <span className="text-2xl shrink-0">{item.icon}</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-0.5">
+                      <h4 className="font-outfit font-bold text-text-primary text-sm">{item.title}</h4>
+                      <span className="text-[10px] text-accent font-semibold">{item.status}</span>
                     </div>
+                    <p className="text-xs text-text-muted truncate">{item.desc}</p>
                   </div>
-                  <p className="text-sm text-text-muted mb-3">{card.desc}</p>
-                  <button className={card.accent ? 'btn-accent text-sm px-4 py-2' : 'btn-outline text-sm px-4 py-2'}>{card.btn}</button>
+                  <button className={item.accent ? 'btn-accent text-xs px-3 py-1.5 shrink-0' : 'btn-outline text-xs px-3 py-1.5 shrink-0'}>{item.action}</button>
                 </div>
               ))}
-            </aside>
+            </div>
           </div>
         </div>
       </section>
@@ -129,31 +153,6 @@ export default function ContactPage() {
         subtitle="Most questions are answered here."
         questions={faqItems}
       />
-
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-site mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-bg-main rounded-card border border-border-light shadow-card p-6 text-center">
-              <div className="text-3xl mb-3">🤝</div>
-              <h3 className="font-outfit font-bold text-text-primary mb-2">Business & Partnerships</h3>
-              <p className="text-sm text-text-muted mb-3">Wholesale, B2B health programs, and corporate wellness partnerships.</p>
-              <a href="mailto:partnerships@lumivex.com" className="text-accent font-semibold text-sm hover:opacity-80">Contact Partnerships →</a>
-            </div>
-            <div className="bg-bg-main rounded-card border border-border-light shadow-card p-6 text-center">
-              <div className="text-3xl mb-3">📰</div>
-              <h3 className="font-outfit font-bold text-text-primary mb-2">Press & Media</h3>
-              <p className="text-sm text-text-muted mb-3">Press kits, interview requests, product loans for review.</p>
-              <a href="mailto:press@lumivex.com" className="text-accent font-semibold text-sm hover:opacity-80">Contact Press →</a>
-            </div>
-            <div className="bg-bg-main rounded-card border border-border-light shadow-card p-6 text-center">
-              <div className="text-3xl mb-3">💼</div>
-              <h3 className="font-outfit font-bold text-text-primary mb-2">Careers</h3>
-              <p className="text-sm text-text-muted mb-3">Join a team building the future of health wearables. 12 open roles.</p>
-              <span className="text-text-muted text-sm">12 open roles — careers page coming soon</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
       <FloatingContact label="Chat With Us" />

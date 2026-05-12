@@ -140,6 +140,14 @@ export default function BlogPage() {
                     ))}
                   </ol>
                 </div>
+                <div className="bg-accent-light rounded-card border border-accent/20 p-5">
+                  <h3 className="font-outfit font-bold text-text-primary mb-3">Quick Inquiry</h3>
+                  <div className="space-y-3">
+                    <input type="email" placeholder="Your email" className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all" />
+                    <textarea rows={2} placeholder="Short question..." className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all resize-none" />
+                    <button className="btn-accent w-full text-sm py-2.5">Send →</button>
+                  </div>
+                </div>
               </div>
             </aside>
           </div>
