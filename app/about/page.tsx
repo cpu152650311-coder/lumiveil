@@ -24,12 +24,12 @@ const values = [
 ];
 
 const team = [
-  { name: 'Dr. Anika Sharma', title: 'Co-CEO & Chief Science Officer', bio: 'Former MIT biomedical researcher. 12 patents in wearable health tech. 40+ peer-reviewed papers on PPG signal processing.', image: '/generated/team-anika-sharma.webp' },
-  { name: 'James Whitfield', title: 'Co-CEO & Chief Design Officer', bio: 'Previously led product design at Withings for 7 years. Obsessed with the intersection of beauty and clinical function.', image: '/generated/team-james-whitfield.webp' },
-  { name: 'Dr. Marcus Chen', title: 'Head of AI & Data Science', bio: 'PhD computational biology, MIT. Built HealthCore AI engine. Previously applied ML to cancer detection at Memorial Sloan Kettering.', image: '/generated/team-marcus-chen.webp' },
-  { name: 'Sofia Reyes', title: 'VP of Engineering', bio: 'Ex-Apple Watch sensor team lead. 15 years in consumer electronics. Led miniaturization of ECG array for Apex.', image: '/generated/team-sofia-reyes.webp' },
-  { name: 'Dr. Tobias Muller', title: 'Chief Medical Officer', bio: 'Interventional cardiologist, Charite Berlin. Clinical advisor to three health-tech unicorns. Diagnostic-grade standards.', image: '/generated/team-tobias-muller.webp' },
-  { name: 'Priya Nair', title: 'VP of Marketing & Community', bio: 'Previously Oura Ring growth lead. 10 years health-tech marketing. Built Lumivex community from 0 to 200,000 across 42 countries.', image: '/generated/team-priya-nair.webp' },
+  { name: 'Dr. Anika Sharma', title: 'Co-CEO & Chief Science Officer', bio: 'Former MIT biomedical researcher. 12 patents in wearable health tech.', image: '/generated/team-illustration-1.webp' },
+  { name: 'James Whitfield', title: 'Co-CEO & Chief Design Officer', bio: 'Previously led product design at Withings. Obsessed with beauty + clinical function.', image: '/generated/team-illustration-2.webp' },
+  { name: 'Dr. Marcus Chen', title: 'Head of AI & Data Science', bio: 'PhD computational biology, MIT. Built HealthCore AI engine.', image: '/generated/team-illustration-3.webp' },
+  { name: 'Sofia Reyes', title: 'VP of Engineering', bio: 'Ex-Apple Watch sensor team lead. 15 years in consumer electronics.', image: '/generated/team-illustration-4.webp' },
+  { name: 'Dr. Tobias Muller', title: 'Chief Medical Officer', bio: 'Interventional cardiologist, Charite Berlin. Diagnostic-grade standards.', image: '/generated/team-illustration-5.webp' },
+  { name: 'Priya Nair', title: 'VP of Marketing & Community', bio: 'Previously Oura Ring growth lead. Built community to 200,000 across 42 countries.', image: '/generated/team-illustration-6.webp' },
 ];
 
 const pressLogos = [
