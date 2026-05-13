@@ -80,28 +80,19 @@ export default function AboutPage() {
 
       <FeatureGrid title="Our Values" subtitle="Not just words on a wall." features={values} variant="cards" />
 
-      {/* Team asymmetric grid */}
+      {/* Materials — 用材质拼贴图替代团队 */}
       <section className="bg-bg-main py-24 px-6">
         <div className="max-w-site mx-auto">
-          <p className="font-outfit text-sm uppercase tracking-widest text-text-muted text-center mb-3">Our Team</p>
-          <h2 className="font-outfit text-3xl sm:text-4xl font-bold text-text-primary text-center mb-2">Meet the people behind Lumivex</h2>
-          <p className="text-text-muted text-lg text-center mb-14">Biomedical engineers, product designers, and health nerds.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((m, i) => {
-              const isFounder = i < 2;
-              return (
-                <div key={i} className={`bg-white rounded-2xl border border-border-light overflow-hidden hover:shadow-card transition-shadow ${isFounder ? 'lg:col-span-2' : ''}`}>
-                  <div className={`flex ${isFounder ? 'flex-row items-center' : 'flex-col'} p-6 gap-5`}>
-                    <img src={m.image} alt={m.name} className={`rounded-xl object-cover ${isFounder ? 'w-24 h-24 shrink-0' : 'w-20 h-20 mx-auto'}`} />
-                    <div className={isFounder ? '' : 'text-center'}>
-                      <h3 className={`font-outfit font-bold text-text-primary ${isFounder ? 'text-xl' : 'text-base'}`}>{m.name}</h3>
-                      <p className="text-sm text-accent font-semibold mt-0.5">{m.title}</p>
-                      <p className="text-sm text-text-muted mt-2 leading-relaxed">{m.bio}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <img src="/generated/brand-materials-collage.webp" alt="Materials" className="rounded-2xl shadow-card w-full" />
+            </div>
+            <div className="lg:w-1/2">
+              <p className="font-outfit text-sm uppercase tracking-widest text-text-muted mb-3">Materials & Craft</p>
+              <h2 className="font-outfit text-3xl font-bold text-text-primary mb-4">Every material chosen for a reason.</h2>
+              <p className="text-text-muted leading-relaxed mb-4">Grade 5 titanium — 40% lighter than steel, corrosion-resistant, hypoallergenic. Sapphire crystal — lab-grown over 30 days, 9H hardness, virtually scratch-proof. Ceramic bezel — 10x harder than stainless steel, maintains polish indefinitely.</p>
+              <p className="text-text-muted leading-relaxed">Fluoro-elastomer bands are dermatologist-tested for 24/7 wear. 80% recycled packaging. Carbon-neutral shipping since 2024. Conflict-free titanium sourcing.</p>
+            </div>
           </div>
         </div>
       </section>
