@@ -92,12 +92,14 @@ export default function ProductsPage() {
     <>
       <Navigation />
 
-      <HeroSection
-        title="Find Your Lumivex"
-        subtitle="Filter by sport, health goal, or budget. Every watch ships free."
-        breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Products', href: '/products' }]}
-        compact
-      />
+      <section className="relative pt-32 pb-12 px-6" style={{ background: 'linear-gradient(135deg, #FAFAF9 0%, #FFF7ED 50%, #FAFAF9 100%)' }}>
+        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'url(/generated/brand-hero-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="max-w-site mx-auto relative z-10 text-center">
+          <nav className="mb-4 text-sm text-text-muted flex gap-2 justify-center"><a href="/" className="hover:text-accent">Home</a><span>/</span><span className="text-text-primary">Products</span></nav>
+          <h1 className="font-outfit text-4xl sm:text-5xl font-extrabold text-text-primary">Find Your Lumivex</h1>
+          <p className="text-lg text-text-muted mt-2">Filter by sport, health goal, or budget. Every watch ships free.</p>
+        </div>
+      </section>
 
       <ProductGrid
         products={allProducts}

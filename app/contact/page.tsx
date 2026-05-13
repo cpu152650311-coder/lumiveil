@@ -39,7 +39,7 @@ export default function ContactPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-12 px-4 bg-bg-main">
+      <section className="relative pt-32 pb-12 px-6" style={{ background: 'linear-gradient(135deg, #FAFAF9 0%, #FFF7ED 50%, #FAFAF9 100%)' }}>
         <div className="max-w-site mx-auto text-center">
           <nav className="mb-4 text-sm text-text-muted flex gap-2 justify-center">
             <a href="/" className="hover:text-primary transition-colors">Home</a><span>/</span><span className="text-text-primary">Contact</span>

@@ -51,7 +51,14 @@ export default function AboutPage() {
     <>
       <Navigation />
 
-      <HeroSection title="We built the watch we couldn't find" subtitle="A biomedical engineer. A product designer. One shared obsession: make clinical health intelligence accessible to everyone." breadcrumb={[{ label: 'Home', href: '/' }, { label: 'About', href: '/about' }]} image="/generated/about-hero-founders-lab.webp" imageAlt="Lumivex founders in their lab" />
+      <section className="relative pt-32 pb-20 px-6 overflow-hidden" style={{ background: 'linear-gradient(135deg, #FAFAF9 0%, #FFF7ED 50%, #FAFAF9 100%)' }}>
+        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'url(/generated/brand-hero-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="max-w-site mx-auto relative z-10 text-center">
+          <nav className="mb-4 text-sm text-text-muted flex gap-2 justify-center"><a href="/" className="hover:text-accent">Home</a><span>/</span><span className="text-text-primary">About</span></nav>
+          <h1 className="font-outfit text-4xl sm:text-5xl font-extrabold text-text-primary">We built the watch we couldn&apos;t find</h1>
+          <p className="text-lg text-text-muted mt-3 max-w-2xl mx-auto">A biomedical engineer. A product designer. One shared obsession: make clinical health intelligence accessible to everyone.</p>
+        </div>
+      </section>
 
       <section className="bg-white py-0 pb-8 px-4 text-center">
         <p className="text-accent italic text-xl max-w-2xl mx-auto font-outfit font-semibold">&ldquo;The best health sensor is the one you actually wear every day.&rdquo;</p>

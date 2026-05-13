@@ -91,6 +91,20 @@ export default function BlogPage() {
                   <textarea rows={2} placeholder="Short question..." className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-accent focus:outline-none resize-none mb-2" />
                   <button className="btn-accent w-full text-sm py-2.5">Send →</button>
                 </div>
+                <div className="bg-white rounded-card border border-border-light shadow-card p-5 text-center">
+                  <p className="text-sm text-text-muted mb-2">48,000+ subscribers</p>
+                  <p className="font-outfit font-bold text-text-primary text-lg">Weekly Health Brief</p>
+                  <p className="text-xs text-text-muted mt-1 mb-3">Science-backed insights. Zero spam.</p>
+                  <input type="email" placeholder="Your email" className="w-full px-3 py-2 text-xs rounded-lg border border-border-light bg-bg-main focus:border-accent focus:outline-none mb-2" />
+                  <button className="btn-accent w-full text-xs py-2">Subscribe Free</button>
+                </div>
+                <div className="bg-white rounded-card border border-border-light shadow-card p-5">
+                  <h3 className="font-outfit font-bold text-text-primary text-sm mb-3">Featured Product</h3>
+                  <img src="/generated/lumivex-apex.webp" alt="Lumivex Apex" className="w-full h-32 object-contain mb-3" />
+                  <p className="font-outfit font-bold text-text-primary text-sm">Lumivex Apex</p>
+                  <p className="text-xs text-text-muted">The flagship. $499</p>
+                  <a href="/products/lumivex-apex" className="text-accent text-xs font-semibold hover:opacity-80">View Details →</a>
+                </div>
               </div>
             </aside>
           </div>

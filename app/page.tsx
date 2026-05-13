@@ -25,7 +25,7 @@ export default function HomePage() {
       <Navigation />
 
       {/* 1 — Hero: 标题在上，视频在下 */}
-      <section className="relative bg-bg-main pt-32">
+      <section className="relative pt-32" style={{ background: 'linear-gradient(135deg, #FAFAF9 0%, #FFF7ED 50%, #FAFAF9 100%)' }}>
         {/* Text area */}
         <div className="max-w-site mx-auto px-6 pb-12 text-center">
           <span className="inline-block bg-accent-light text-accent font-outfit font-semibold text-xs tracking-widest uppercase px-3 py-1.5 rounded-full mb-5">
