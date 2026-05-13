@@ -34,8 +34,8 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-400 ${
         scrolled
-          ? 'bg-white/80 backdrop-blur-xl border-b border-border-light shadow-sm'
-          : 'bg-transparent border-b border-transparent'
+          ? 'bg-white/95 backdrop-blur-xl border-b border-border-light shadow-sm'
+          : 'bg-white/90 border-b border-border-light/50'
       }`}
     >
       <div className="max-w-site mx-auto px-6 h-[72px] flex items-center justify-between gap-8">

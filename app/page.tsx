@@ -24,38 +24,36 @@ export default function HomePage() {
     <>
       <Navigation />
 
-      {/* 1 — Hero: 上下布局 */}
-      <section className="relative bg-bg-main">
+      {/* 1 — Hero: 标题在上，视频在下 */}
+      <section className="relative bg-bg-main pt-32">
+        {/* Text area */}
+        <div className="max-w-site mx-auto px-6 pb-12 text-center">
+          <span className="inline-block bg-accent-light text-accent font-outfit font-semibold text-xs tracking-widest uppercase px-3 py-1.5 rounded-full mb-5">
+            HealthCore AI v3.0
+          </span>
+          <h1 className="font-outfit text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-primary leading-none tracking-tight">
+            Know your body<br />
+            <span className="text-accent">better than anyone.</span>
+          </h1>
+          <p className="text-lg text-text-muted mt-4 leading-relaxed max-w-xl mx-auto">
+            Clinical-grade ECG. Cuffless blood pressure. 21-day battery. An AI that learns your body&apos;s rhythm and alerts you before something&apos;s wrong.
+          </p>
+          <div className="flex flex-wrap gap-4 mt-7 justify-center">
+            <Link href="/products" className="btn-accent text-base px-8 py-3.5">Explore Lumivex</Link>
+            <Link href="/products/lumivex-apex" className="btn-outline text-base px-8 py-3.5">Buy Apex — $499</Link>
+          </div>
+        </div>
         {/* Video area */}
-        <div className="w-full aspect-video max-h-[70vh] bg-primary/5 relative overflow-hidden">
+        <div className="w-full max-w-5xl mx-auto aspect-video bg-primary/5 rounded-2xl overflow-hidden shadow-2xl">
           <video
             autoPlay muted loop playsInline
             poster="/generated/hero-apex-product.webp"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="w-full h-full object-cover"
           >
             <source src="/video/hero-showcase.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-main pointer-events-none" />
         </div>
-        {/* Text area */}
-        <div className="max-w-site mx-auto px-6 pb-20 -mt-16 relative z-10">
-          <div className="text-center max-w-2xl mx-auto">
-            <span className="inline-block bg-accent-light text-accent font-outfit font-semibold text-xs tracking-widest uppercase px-3 py-1.5 rounded-full mb-5">
-              HealthCore AI v3.0
-            </span>
-            <h1 className="font-outfit text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-primary leading-none tracking-tight">
-              Know your body<br />
-              <span className="text-accent">better than anyone.</span>
-            </h1>
-            <p className="text-lg text-text-muted mt-4 leading-relaxed max-w-xl mx-auto">
-              Clinical-grade ECG. Cuffless blood pressure. 21-day battery. An AI that learns your body&apos;s rhythm and alerts you before something&apos;s wrong.
-            </p>
-            <div className="flex flex-wrap gap-4 mt-7 justify-center">
-              <Link href="/products" className="btn-accent text-base px-8 py-3.5">Explore Lumivex</Link>
-              <Link href="/products/lumivex-apex" className="btn-outline text-base px-8 py-3.5">Buy Apex — $499</Link>
-            </div>
-          </div>
-        </div>
+        <div className="pb-16" />
       </section>
 
       {/* 2 — Trust Bar */}
