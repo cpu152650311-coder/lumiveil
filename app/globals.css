@@ -3,16 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --color-accent: #0EA5E9;
-  --color-accent-light: #E0F2FE;
-  --color-text: #0F172A;
+  --color-primary: #0891B2;
+  --color-primary-light: #CFFAFE;
+  --color-secondary: #22D3EE;
+  --color-accent: #059669;
+  --color-accent-light: #D1FAE5;
+  --color-text: #164E63;
   --color-text-muted: #64748B;
-  --color-bg: #F8FAFC;
+  --color-bg: #ECFEFF;
   --color-surface: #FFFFFF;
-  --color-border: #E2E8F0;
+  --color-border: #A5F3FC;
   --radius: 12px;
-  --shadow: 0 4px 24px rgba(14, 165, 233, 0.10), 0 1px 4px rgba(15, 23, 42, 0.06);
-  --shadow-hover: 0 8px 40px rgba(14, 165, 233, 0.18), 0 2px 8px rgba(15, 23, 42, 0.10);
+  --shadow: 0 4px 24px rgba(8, 145, 178, 0.10), 0 1px 4px rgba(22, 78, 99, 0.06);
+  --shadow-hover: 0 8px 40px rgba(8, 145, 178, 0.18), 0 2px 8px rgba(22, 78, 99, 0.10);
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
   --max-width: 1280px;
@@ -49,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-primary);
   text-decoration: none;
   transition: color 0.2s ease, opacity 0.2s ease;
 }
@@ -93,16 +96,16 @@ ul, ol {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: var(--color-accent);
+  background: var(--color-primary);
   color: #ffffff;
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 15px;
   padding: 13px 28px;
   border-radius: var(--radius);
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--color-primary);
   transition: background 0.22s ease, transform 0.18s ease, box-shadow 0.22s ease;
-  box-shadow: 0 2px 12px rgba(14, 165, 233, 0.22);
+  box-shadow: 0 2px 12px rgba(8, 145, 178, 0.22);
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
@@ -110,10 +113,10 @@ ul, ol {
 }
 
 .btn-accent:hover {
-  background: #0284c7;
-  border-color: #0284c7;
+  background: #0E7490;
+  border-color: #0E7490;
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(14, 165, 233, 0.32);
+  box-shadow: 0 6px 24px rgba(8, 145, 178, 0.32);
   opacity: 1;
 }
 
@@ -127,13 +130,13 @@ ul, ol {
   justify-content: center;
   gap: 8px;
   background: transparent;
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 15px;
   padding: 13px 28px;
   border-radius: var(--radius);
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--color-primary);
   transition: background 0.22s ease, color 0.22s ease, transform 0.18s ease, box-shadow 0.22s ease;
   cursor: pointer;
   white-space: nowrap;
@@ -142,9 +145,9 @@ ul, ol {
 }
 
 .btn-outline:hover {
-  background: var(--color-accent-light);
+  background: var(--color-primary-light);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.14);
+  box-shadow: 0 4px 16px rgba(8, 145, 178, 0.14);
   opacity: 1;
 }
 
@@ -165,7 +168,7 @@ ul, ol {
   text-transform: uppercase;
   padding: 5px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(14, 165, 233, 0.18);
+  border: 1px solid rgba(5, 150, 105, 0.18);
 }
 
 .product-card {
@@ -261,7 +264,7 @@ ul, ol {
 }
 
 .text-accent {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 .text-muted {

@@ -14,7 +14,7 @@ export default function ParallaxBanner({ bgImage, title, subtitle, feature }: Pa
       />
       <div className="absolute inset-0 bg-text-primary/60 backdrop-blur-[2px]" />
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-        <span className="inline-block bg-accent/90 text-white font-outfit font-semibold text-xs tracking-widest uppercase px-4 py-2 rounded-full mb-6">
+        <span className="inline-block bg-primary/90 text-white font-outfit font-semibold text-xs tracking-widest uppercase px-4 py-2 rounded-full mb-6">
           {feature}
         </span>
         <h2 className="font-outfit text-3xl sm:text-5xl font-extrabold text-white leading-tight tracking-tight">

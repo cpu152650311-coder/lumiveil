@@ -25,7 +25,7 @@ export default function FAQSection({ title, subtitle, questions }: FAQSectionPro
           {questions.map((q, i) => (
             <div key={i} className="bg-white rounded-card border border-border-light shadow-card overflow-hidden">
               <button
-                className="w-full text-left px-6 py-4 flex justify-between items-center gap-4 font-outfit font-semibold text-text-primary hover:bg-accent-light/30 transition-colors"
+                className="w-full text-left px-6 py-4 flex justify-between items-center gap-4 font-outfit font-semibold text-text-primary hover:bg-primary-light/30 transition-colors"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 aria-expanded={openIndex === i}
               >

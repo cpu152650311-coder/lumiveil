@@ -73,7 +73,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto z-10 animate-in">
         <button
           onClick={() => { onClose(); reset(); }}
-          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-bg-main hover:bg-accent-light text-text-muted hover:text-accent transition-colors z-10"
+          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-bg-main hover:bg-primary-light text-text-muted hover:text-primary transition-colors z-10"
           aria-label="Close"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
@@ -92,7 +92,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           <>
             <div className="p-6 border-b border-border-light">
               <div className="flex items-center gap-3 mb-1">
-                <div className="w-10 h-10 bg-accent-light rounded-xl flex items-center justify-center text-lg">💬</div>
+                <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center text-lg">💬</div>
                 <div>
                   <h3 className="font-outfit text-xl font-bold text-text-primary">Get in Touch</h3>
                   <p className="text-sm text-text-muted">We typically respond within 2 hours.</p>
@@ -105,23 +105,23 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 <div>
                   <label htmlFor="modal-name" className="block text-sm font-medium text-text-primary mb-1">Name *</label>
                   <input id="modal-name" name="name" type="text" required value={name} onChange={(e) => { setName(e.target.value); if (errorMsg) setErrorMsg(''); }}
-                    className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all text-sm" placeholder="Your name" />
+                    className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all text-sm" placeholder="Your name" />
                 </div>
                 <div>
                   <label htmlFor="modal-email" className="block text-sm font-medium text-text-primary mb-1">Email *</label>
                   <input id="modal-email" name="email" type="email" required value={email} onChange={(e) => { setEmail(e.target.value); if (errorMsg) setErrorMsg(''); }}
-                    className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all text-sm" placeholder="you@example.com" />
+                    className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all text-sm" placeholder="you@example.com" />
                 </div>
               </div>
               <div>
                 <label htmlFor="modal-company" className="block text-sm font-medium text-text-primary mb-1">Company (optional)</label>
                 <input id="modal-company" name="company" type="text" value={company} onChange={(e) => setCompany(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all text-sm" placeholder="Your company" />
+                  className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all text-sm" placeholder="Your company" />
               </div>
               <div>
                 <label htmlFor="modal-topic" className="block text-sm font-medium text-text-primary mb-1">Topic</label>
                 <select id="modal-topic" name="topic" value={topic} onChange={(e) => setTopic(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all text-sm bg-white">
+                  className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all text-sm bg-white">
                   {['General Inquiry', 'Product Question', 'Bulk / Wholesale', 'Partnership', 'Press / Media', 'Technical Support'].map((t) => (
                     <option key={t}>{t}</option>
                   ))}
@@ -130,7 +130,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               <div>
                 <label htmlFor="modal-message" className="block text-sm font-medium text-text-primary mb-1">Message *</label>
                 <textarea id="modal-message" name="message" rows={4} required value={message} onChange={(e) => setMessage(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all text-sm resize-y" placeholder="Tell us what you need..." />
+                  className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all text-sm resize-y" placeholder="Tell us what you need..." />
               </div>
 
               {errorMsg && <p className="text-red-500 text-sm">{errorMsg}</p>}

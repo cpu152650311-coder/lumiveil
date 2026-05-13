@@ -76,7 +76,7 @@ export default function AboutPage() {
       />
 
       <section className="bg-white py-0 pb-8 px-4 text-center">
-        <p className="text-accent italic text-xl max-w-2xl mx-auto font-outfit font-semibold">
+        <p className="text-primary italic text-xl max-w-2xl mx-auto font-outfit font-semibold">
           &ldquo;The best health sensor is the one you actually wear every day.&rdquo;
         </p>
       </section>
@@ -119,7 +119,7 @@ export default function AboutPage() {
                     />
                     <div className={isFounder ? '' : 'text-center'}>
                       <h3 className={`font-outfit font-bold text-text-primary ${isFounder ? 'text-xl' : 'text-base'}`}>{member.name}</h3>
-                      <p className="text-sm text-accent font-semibold mt-0.5">{member.title}</p>
+                      <p className="text-sm text-primary font-semibold mt-0.5">{member.title}</p>
                       <p className="text-sm text-text-muted mt-2 leading-relaxed">{member.bio}</p>
                     </div>
                   </div>

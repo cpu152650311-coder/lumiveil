@@ -67,7 +67,7 @@ export default function TechnologyPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <h3 className="font-outfit font-bold text-text-primary text-sm">{feat.title}</h3>
-                    <span className="text-[10px] font-semibold text-accent bg-accent-light px-1.5 py-0.5 rounded-full">{feat.accuracy}</span>
+                    <span className="text-[10px] font-semibold text-primary bg-primary-light px-1.5 py-0.5 rounded-full">{feat.accuracy}</span>
                   </div>
                   <p className="text-sm text-text-muted leading-relaxed">{feat.description}</p>
                 </div>
@@ -78,7 +78,7 @@ export default function TechnologyPage() {
       </section>
 
       {/* Performance — 6 项指标，全宽 */}
-      <section className="bg-accent py-20 px-6">
+      <section className="bg-primary py-20 px-6">
         <div className="max-w-site mx-auto">
           <p className="font-outfit text-sm uppercase tracking-widest text-white/60 text-center mb-3">Performance Benchmarks</p>
           <h2 className="font-outfit text-3xl sm:text-4xl font-bold text-white text-center mb-12">Independent lab-tested. Real-world proven.</h2>

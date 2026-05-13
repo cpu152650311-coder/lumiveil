@@ -10,7 +10,7 @@ interface CTAProps {
 }
 
 export default function CTASection({ title, subtitle, cta, trustBadges, variant = 'light', compact }: CTAProps) {
-  const bgClass = variant === 'accent' ? 'bg-accent text-white' : variant === 'light' ? 'bg-accent-light' : 'bg-white';
+  const bgClass = variant === 'accent' ? 'bg-primary text-white' : variant === 'light' ? 'bg-primary-light' : 'bg-white';
 
   return (
     <section className={`${bgClass} ${compact ? 'py-12' : 'py-20'} px-4`}>
@@ -26,7 +26,7 @@ export default function CTASection({ title, subtitle, cta, trustBadges, variant 
             <Link
               key={i}
               href={btn.href}
-              className={variant === 'accent' ? 'bg-white text-accent font-outfit font-semibold px-7 py-3 rounded-card hover:shadow-lg transition-all' : 'btn-accent'}
+              className={variant === 'accent' ? 'bg-white text-primary font-outfit font-semibold px-7 py-3 rounded-card hover:shadow-lg transition-all' : 'btn-accent'}
             >
               {btn.label}
             </Link>

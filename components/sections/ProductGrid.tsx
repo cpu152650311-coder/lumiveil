@@ -34,7 +34,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <ul className="space-y-1 mb-4">
           {product.features.slice(0, 4).map((feat, i) => (
             <li key={i} className="text-sm text-text-primary flex items-start gap-2">
-              <svg className="w-4 h-4 text-accent shrink-0 mt-0.5" viewBox="0 0 16 16" fill="none">
+              <svg className="w-4 h-4 text-primary shrink-0 mt-0.5" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8l3 3 7-7" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               {feat}
@@ -70,7 +70,7 @@ export default function ProductGrid({ title, subtitle, products, filters }: Prod
         {filters && (
           <div className="flex flex-wrap justify-center gap-2 mb-10">
             {filters.map((f, i) => (
-              <button key={i} className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${i === 0 ? 'bg-accent text-white' : 'bg-bg-main text-text-muted hover:bg-accent-light'}`}>
+              <button key={i} className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${i === 0 ? 'bg-primary text-white' : 'bg-bg-main text-text-muted hover:bg-primary-light'}`}>
                 {f.label}
               </button>
             ))}

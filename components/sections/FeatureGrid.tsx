@@ -21,11 +21,11 @@ export default function FeatureGrid({ title, subtitle, features, variant = 'card
         <div className={`grid ${variant === 'cards' ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'} gap-6`}>
           {features.map((feat, i) => (
             <div key={i} className="bg-white rounded-card border border-border-light shadow-card p-6 hover:shadow-card-hover transition-shadow">
-              <div className="w-12 h-12 bg-accent-light rounded-xl flex items-center justify-center text-2xl mb-4">{feat.icon}</div>
+              <div className="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center text-2xl mb-4">{feat.icon}</div>
               <h3 className="font-outfit text-lg font-bold text-text-primary mb-2">{feat.title}</h3>
               <p className="text-sm text-text-muted leading-relaxed">{feat.description}</p>
               {feat.accuracy && (
-                <span className="inline-block mt-3 text-xs font-semibold text-accent bg-accent-light px-2 py-1 rounded-full">{feat.accuracy}</span>
+                <span className="inline-block mt-3 text-xs font-semibold text-primary bg-primary-light px-2 py-1 rounded-full">{feat.accuracy}</span>
               )}
             </div>
           ))}

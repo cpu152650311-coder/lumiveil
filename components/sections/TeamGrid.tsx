@@ -23,10 +23,10 @@ export default function TeamGrid({ title, subtitle, members }: TeamGridProps) {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-2 border-accent-light group-hover:border-accent transition-colors"
+                className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-2 border-primary-light group-hover:border-primary transition-colors"
               />
               <h3 className="font-outfit text-lg font-bold text-text-primary">{member.name}</h3>
-              <p className="text-sm text-accent font-semibold mb-2">{member.title}</p>
+              <p className="text-sm text-primary font-semibold mb-2">{member.title}</p>
               <p className="text-sm text-text-muted leading-relaxed">{member.bio}</p>
             </div>
           ))}

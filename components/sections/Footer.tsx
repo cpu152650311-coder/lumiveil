@@ -37,7 +37,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {productLinks.map((link, i) => (
                 <li key={i}>
-                  <Link href={link.href} className="text-sm text-text-muted hover:text-accent transition-colors">{link.label}</Link>
+                  <Link href={link.href} className="text-sm text-text-muted hover:text-primary transition-colors">{link.label}</Link>
                 </li>
               ))}
             </ul>
@@ -47,7 +47,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {companyLinks.map((link, i) => (
                 <li key={i}>
-                  <Link href={link.href} className="text-sm text-text-muted hover:text-accent transition-colors">{link.label}</Link>
+                  <Link href={link.href} className="text-sm text-text-muted hover:text-primary transition-colors">{link.label}</Link>
                 </li>
               ))}
             </ul>
@@ -56,19 +56,19 @@ export default function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider text-text-primary mb-4">Contact</h4>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:hello@lumivex.com" className="text-sm text-text-muted hover:text-accent transition-colors">
+                <a href="mailto:hello@lumivex.com" className="text-sm text-text-muted hover:text-primary transition-colors">
                   hello@lumivex.com
                 </a>
               </li>
               <li>
-                <a href="tel:+18555864839" className="text-sm text-text-muted hover:text-accent transition-colors">
+                <a href="tel:+18555864839" className="text-sm text-text-muted hover:text-primary transition-colors">
                   +1 (855) LUMIVEX
                 </a>
               </li>
               <li>
                 <button
                   onClick={() => setShowContact(true)}
-                  className="text-sm text-accent font-semibold hover:opacity-80 transition-opacity mt-1"
+                  className="text-sm text-primary font-semibold hover:opacity-80 transition-opacity mt-1"
                 >
                   Send us a message →
                 </button>

@@ -60,11 +60,11 @@ export default function BlogPage() {
           <input
             type="search"
             placeholder="Search articles, topics, or health questions"
-            className="w-full max-w-md px-5 py-3 rounded-card border border-border-light bg-white text-text-primary placeholder:text-text-muted focus:border-accent focus:outline-none transition-colors"
+            className="w-full max-w-md px-5 py-3 rounded-card border border-border-light bg-white text-text-primary placeholder:text-text-muted focus:border-primary focus:outline-none transition-colors"
           />
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
-              <button key={cat} className="px-4 py-1.5 text-sm rounded-full border border-border-light text-text-muted hover:border-accent hover:text-accent transition-colors">{cat}</button>
+              <button key={cat} className="px-4 py-1.5 text-sm rounded-full border border-border-light text-text-muted hover:border-primary hover:text-primary transition-colors">{cat}</button>
             ))}
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function BlogPage() {
               </div>
               <div className="lg:w-2/5 p-8 lg:p-10 flex flex-col justify-center">
                 <span className="badge text-xs mb-3">{featuredArticle.category}</span>
-                <h3 className="font-outfit text-2xl lg:text-3xl font-bold text-text-primary group-hover:text-accent transition-colors leading-tight">
+                <h3 className="font-outfit text-2xl lg:text-3xl font-bold text-text-primary group-hover:text-primary transition-colors leading-tight">
                   {featuredArticle.title}
                 </h3>
                 <p className="text-text-muted mt-3 leading-relaxed">{featuredArticle.excerpt}</p>
@@ -92,7 +92,7 @@ export default function BlogPage() {
                   <span>·</span>
                   <span>{featuredArticle.readTime}</span>
                 </div>
-                <span className="inline-flex items-center gap-1 text-accent font-semibold mt-4 group-hover:gap-2 transition-all">
+                <span className="inline-flex items-center gap-1 text-primary font-semibold mt-4 group-hover:gap-2 transition-all">
                   Read Article <span aria-hidden="true">→</span>
                 </span>
               </div>
@@ -112,7 +112,7 @@ export default function BlogPage() {
                 {latestArticles.map((article) => (
                   <Link key={article.slug} href={`/blog/${article.slug}`} className="group bg-white rounded-card border border-border-light shadow-card p-6 hover:shadow-card-hover hover:-translate-y-0.5 transition-all">
                     <span className="badge text-xs mb-2">{article.category}</span>
-                    <h3 className="font-outfit font-bold text-text-primary group-hover:text-accent transition-colors mt-2 leading-snug">{article.title}</h3>
+                    <h3 className="font-outfit font-bold text-text-primary group-hover:text-primary transition-colors mt-2 leading-snug">{article.title}</h3>
                     <p className="text-sm text-text-muted mt-1.5 line-clamp-2">{article.excerpt}</p>
                     <div className="flex items-center gap-3 mt-3 text-xs text-text-muted">
                       <span className="font-medium text-text-primary">{article.author}</span>
@@ -134,17 +134,17 @@ export default function BlogPage() {
                   <ol className="space-y-3">
                     {popularArticles.map((title, i) => (
                       <li key={i} className="flex gap-3 text-sm group">
-                        <span className="text-accent font-outfit font-bold shrink-0">{i + 1}.</span>
-                        <span className="text-text-muted group-hover:text-accent transition-colors cursor-pointer leading-snug">{title}</span>
+                        <span className="text-primary font-outfit font-bold shrink-0">{i + 1}.</span>
+                        <span className="text-text-muted group-hover:text-primary transition-colors cursor-pointer leading-snug">{title}</span>
                       </li>
                     ))}
                   </ol>
                 </div>
-                <div className="bg-accent-light rounded-card border border-accent/20 p-5">
+                <div className="bg-primary-light rounded-card border border-primary/20 p-5">
                   <h3 className="font-outfit font-bold text-text-primary mb-3">Quick Inquiry</h3>
                   <div className="space-y-3">
-                    <input type="email" placeholder="Your email" className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all" />
-                    <textarea rows={2} placeholder="Short question..." className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all resize-none" />
+                    <input type="email" placeholder="Your email" className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all" />
+                    <textarea rows={2} placeholder="Short question..." className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all resize-none" />
                     <button className="btn-accent w-full text-sm py-2.5">Send →</button>
                   </div>
                 </div>

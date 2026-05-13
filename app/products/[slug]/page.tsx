@@ -47,9 +47,9 @@ export default async function ProductPage({ params }: Props) {
       <section className="relative pt-32 pb-0 px-4 overflow-hidden" style={{ background: 'radial-gradient(ellipse 80% 70% at 70% 50%, #E0F2FE 0%, #F8FAFC 50%, #FFFFFF 100%)' }}>
         <div className="max-w-site mx-auto">
           <nav className="mb-6 text-sm text-text-muted flex gap-2">
-            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
+            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/products" className="hover:text-accent transition-colors">Products</Link>
+            <Link href="/products" className="hover:text-primary transition-colors">Products</Link>
             <span>/</span>
             <span className="text-text-primary">{product.name}</span>
           </nav>
@@ -85,7 +85,7 @@ export default async function ProductPage({ params }: Props) {
               <div className="grid grid-cols-2 gap-3 mt-8 pt-8 border-t border-border-light">
                 {product.specs.slice(0, 4).map((spec, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm">
-                    <span className="text-accent font-bold">{spec.value}</span>
+                    <span className="text-primary font-bold">{spec.value}</span>
                     <span className="text-text-muted">{spec.label}</span>
                   </div>
                 ))}
@@ -103,20 +103,20 @@ export default async function ProductPage({ params }: Props) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-5">
             <ul className="space-y-4">
               {leftFeatures.map((feat, i) => (
-                <li key={i} className="flex items-start gap-4 p-4 rounded-xl hover:bg-accent-light/30 transition-colors group">
+                <li key={i} className="flex items-start gap-4 p-4 rounded-xl hover:bg-primary-light/30 transition-colors group">
                   <span className="text-2xl shrink-0">{featureIcons[i] || '✦'}</span>
                   <div>
-                    <span className="text-text-primary font-medium group-hover:text-accent transition-colors">{feat}</span>
+                    <span className="text-text-primary font-medium group-hover:text-primary transition-colors">{feat}</span>
                   </div>
                 </li>
               ))}
             </ul>
             <ul className="space-y-4">
               {rightFeatures.map((feat, i) => (
-                <li key={i} className="flex items-start gap-4 p-4 rounded-xl hover:bg-accent-light/30 transition-colors group">
+                <li key={i} className="flex items-start gap-4 p-4 rounded-xl hover:bg-primary-light/30 transition-colors group">
                   <span className="text-2xl shrink-0">{featureIcons[half + i] || '✦'}</span>
                   <div>
-                    <span className="text-text-primary font-medium group-hover:text-accent transition-colors">{feat}</span>
+                    <span className="text-text-primary font-medium group-hover:text-primary transition-colors">{feat}</span>
                   </div>
                 </li>
               ))}
@@ -157,7 +157,7 @@ export default async function ProductPage({ params }: Props) {
               <ul className="space-y-3">
                 {product.inTheBox.map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-text-primary">
-                    <svg className="w-5 h-5 text-accent shrink-0" viewBox="0 0 20 20" fill="none">
+                    <svg className="w-5 h-5 text-primary shrink-0" viewBox="0 0 20 20" fill="none">
                       <path d="M4 10l4 4 8-8" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     {item}
@@ -179,10 +179,10 @@ export default async function ProductPage({ params }: Props) {
               <Link key={p.id} href={`/products/${p.id}`} className="group bg-white rounded-card border border-border-light shadow-card p-6 hover:shadow-card-hover hover:-translate-y-1 transition-all text-center">
                 <img src={p.image} alt={p.name} className="w-full h-36 object-contain mb-4 group-hover:scale-105 transition-transform duration-300" />
                 {p.badge && <span className="badge text-xs mb-1">{p.badge}</span>}
-                <h3 className="font-outfit font-bold text-text-primary group-hover:text-accent transition-colors mt-1">{p.name}</h3>
+                <h3 className="font-outfit font-bold text-text-primary group-hover:text-primary transition-colors mt-1">{p.name}</h3>
                 <p className="text-xs text-text-muted mt-1">{p.tagline}</p>
                 <p className="font-outfit font-bold text-lg text-text-primary mt-3">${p.price}</p>
-                <span className="inline-block mt-2 text-accent text-sm font-semibold">View Details →</span>
+                <span className="inline-block mt-2 text-primary text-sm font-semibold">View Details →</span>
               </Link>
             ))}
           </div>

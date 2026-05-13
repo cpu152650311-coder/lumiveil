@@ -15,7 +15,7 @@ export default function FloatingContact({ label = 'Contact', className = '' }: F
     <>
       <button
         onClick={() => setShow(true)}
-        className={`fixed bottom-6 right-6 z-[1999] bg-accent text-white font-outfit font-semibold px-5 py-3.5 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-2 ${className}`}
+        className={`fixed bottom-6 right-6 z-[1999] bg-primary text-white font-outfit font-semibold px-5 py-3.5 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-2 ${className}`}
         aria-label="Open contact form"
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -23,7 +23,7 @@ export default function HeroSection({ title, subtitle, breadcrumb, image, imageA
               <span key={i}>
                 {i > 0 && <span className="mx-1">/</span>}
                 {i < breadcrumb.length - 1 ? (
-                  <Link href={b.href} className="hover:text-accent transition-colors">{b.label}</Link>
+                  <Link href={b.href} className="hover:text-primary transition-colors">{b.label}</Link>
                 ) : (
                   <span className="text-text-primary">{b.label}</span>
                 )}
@@ -35,7 +35,7 @@ export default function HeroSection({ title, subtitle, breadcrumb, image, imageA
         <div className={`flex flex-col ${image ? 'lg:flex-row lg:items-center lg:gap-16' : ''}`}>
           <div className={`${image ? 'lg:w-1/2' : 'max-w-3xl'}`}>
             {badge && (
-              <span className="inline-block bg-accent-light text-accent font-outfit font-semibold text-xs tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
+              <span className="inline-block bg-primary-light text-primary font-outfit font-semibold text-xs tracking-wider uppercase px-3 py-1.5 rounded-full mb-4">
                 {badge}
               </span>
             )}
@@ -65,7 +65,7 @@ export default function HeroSection({ title, subtitle, breadcrumb, image, imageA
               <div className="flex flex-wrap gap-4 mt-6">
                 {trustBadges.map((badge, i) => (
                   <span key={i} className="text-sm text-text-muted flex items-center gap-1.5">
-                    <span className="w-4 h-4 rounded-full bg-accent-light flex items-center justify-center">
+                    <span className="w-4 h-4 rounded-full bg-primary-light flex items-center justify-center">
                       <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
                         <path d="M2 5l2 2 4-4" stroke="#0EA5E9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>

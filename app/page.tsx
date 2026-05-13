@@ -45,16 +45,16 @@ export default function HomePage() {
       <Navigation />
 
       {/* 1 — Hero */}
-      <section className="relative pt-32 pb-24 px-6" style={{ background: 'radial-gradient(ellipse 90% 80% at 75% 40%, #E0F2FE 0%, #F8FAFC 45%, #FFFFFF 100%)' }}>
+      <section className="relative pt-32 pb-24 px-6" style={{ background: 'radial-gradient(ellipse 90% 80% at 75% 40%, #CFFAFE 0%, #ECFEFF 45%, #FFFFFF 100%)' }}>
         <div className="max-w-site mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-20">
             <div className="lg:w-1/2">
-              <span className="inline-block bg-accent-light text-accent font-outfit font-semibold text-xs tracking-wider uppercase px-3 py-1.5 rounded-full mb-6">
+              <span className="inline-block bg-primary-light text-primary font-outfit font-semibold text-xs tracking-wider uppercase px-3 py-1.5 rounded-full mb-6">
                 HealthCore AI v3.0 — Now with trend forecasting
               </span>
               <h1 className="font-outfit text-5xl sm:text-6xl lg:text-7xl font-extrabold text-text-primary leading-none tracking-tight">
                 Know your body<br />
-                <span className="text-accent">better than anyone.</span>
+                <span className="text-primary">better than anyone.</span>
               </h1>
               <p className="text-lg sm:text-xl text-text-muted mt-6 leading-relaxed max-w-lg">
                 FDA-cleared ECG. Cuffless blood pressure. 21-day battery. An AI that learns your body&apos;s rhythm and alerts you before something&apos;s wrong.
@@ -118,7 +118,7 @@ export default function HomePage() {
                   { value: '2 hours', label: 'Average response time from our support team. Real humans, not chatbots.' },
                 ].map((item, i) => (
                   <li key={i}>
-                    <span className="font-outfit text-3xl font-extrabold text-accent">{item.value}</span>
+                    <span className="font-outfit text-3xl font-extrabold text-primary">{item.value}</span>
                     <p className="text-text-muted mt-1 leading-relaxed">{item.label}</p>
                   </li>
                 ))}

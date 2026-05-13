@@ -57,7 +57,7 @@ export default function FeatureCarousel({ slides }: FeatureCarouselProps) {
                 <h2 className="font-outfit text-3xl sm:text-4xl font-bold text-text-primary">{slide.title}</h2>
                 <p className="text-lg text-text-muted mt-3 leading-relaxed">{slide.subtitle}</p>
                 <div className="mt-6">
-                  <span className="font-outfit text-5xl font-extrabold text-accent">{slide.stat}</span>
+                  <span className="font-outfit text-5xl font-extrabold text-primary">{slide.stat}</span>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function FeatureCarousel({ slides }: FeatureCarouselProps) {
               key={i}
               onClick={() => goTo(i)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                i === current ? 'bg-accent w-8' : 'bg-border-light hover:bg-accent-light'
+                i === current ? 'bg-primary w-8' : 'bg-border-light hover:bg-primary-light'
               }`}
               aria-label={`Go to slide ${i + 1}`}
             />

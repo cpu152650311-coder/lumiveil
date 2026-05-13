@@ -21,7 +21,7 @@ const faqItems = [
 
 const channelCards = [
   { icon: '💬', title: 'Live Chat', subtitle: 'Online now', desc: 'Fastest option for quick questions.', btn: 'Start Chat', color: 'bg-green-50 border-green-200', dot: 'bg-green-500' },
-  { icon: '📧', title: 'Email Us', subtitle: '< 2 hour response', desc: 'hello@lumivex.com', btn: 'Copy Email', color: 'bg-accent-light border-accent/20', dot: 'bg-accent' },
+  { icon: '📧', title: 'Email Us', subtitle: '< 2 hour response', desc: 'hello@lumivex.com', btn: 'Copy Email', color: 'bg-primary-light border-primary/20', dot: 'bg-primary' },
   { icon: '📞', title: 'Call Us', subtitle: 'Mon–Fri, 9am–6pm EST', desc: '+1 (855) LUMIVEX', btn: 'Call Now', color: 'bg-bg-main border-border-light', dot: 'bg-text-muted' },
 ];
 
@@ -42,7 +42,7 @@ export default function ContactPage() {
       <section className="pt-32 pb-12 px-4 bg-bg-main">
         <div className="max-w-site mx-auto text-center">
           <nav className="mb-4 text-sm text-text-muted flex gap-2 justify-center">
-            <a href="/" className="hover:text-accent transition-colors">Home</a><span>/</span><span className="text-text-primary">Contact</span>
+            <a href="/" className="hover:text-primary transition-colors">Home</a><span>/</span><span className="text-text-primary">Contact</span>
           </nav>
           <h1 className="font-outfit text-4xl sm:text-5xl font-extrabold text-text-primary tracking-tight">
             We&apos;re here to help
@@ -91,24 +91,24 @@ export default function ContactPage() {
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-1">Name *</label>
                       <input id="name" name="name" type="text" required value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all" placeholder="Your name" />
+                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all" placeholder="Your name" />
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-1">Email *</label>
                       <input id="email" name="email" type="email" required value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all" placeholder="you@example.com" />
+                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all" placeholder="you@example.com" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="order" className="block text-sm font-medium text-text-primary mb-1">Order Number (optional)</label>
                       <input id="order" name="orderNumber" type="text" value={formState.orderNumber} onChange={(e) => setFormState({ ...formState, orderNumber: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all" placeholder="LUM-XXXXX" />
+                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all" placeholder="LUM-XXXXX" />
                     </div>
                     <div>
                       <label htmlFor="topic" className="block text-sm font-medium text-text-primary mb-1">Topic</label>
                       <select id="topic" name="topic" value={formState.topic} onChange={(e) => setFormState({ ...formState, topic: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all bg-white">
+                        className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all bg-white">
                         {['General Inquiry', 'Order Status', 'Technical Support', 'Returns & Exchanges', 'Partnership', 'Press & Media'].map((t) => (<option key={t}>{t}</option>))}
                       </select>
                     </div>
@@ -116,7 +116,7 @@ export default function ContactPage() {
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-1">Message *</label>
                     <textarea id="message" name="message" rows={5} required value={formState.message} onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-light transition-all resize-y" placeholder="Tell us how we can help..." />
+                      className="w-full px-4 py-3 rounded-xl border border-border-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-light transition-all resize-y" placeholder="Tell us how we can help..." />
                   </div>
                   <button type="submit" className="btn-accent text-base px-8 py-3.5">Send Message</button>
                 </form>
@@ -136,7 +136,7 @@ export default function ContactPage() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-0.5">
                       <h4 className="font-outfit font-bold text-text-primary text-sm">{item.title}</h4>
-                      <span className="text-[10px] text-accent font-semibold">{item.status}</span>
+                      <span className="text-[10px] text-primary font-semibold">{item.status}</span>
                     </div>
                     <p className="text-xs text-text-muted truncate">{item.desc}</p>
                   </div>

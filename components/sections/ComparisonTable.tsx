@@ -26,7 +26,7 @@ export default function ComparisonTable({ title, subtitle, columns, rows, highli
                 {columns.map((col, i) => (
                   <th
                     key={i}
-                    className={`p-4 text-left font-outfit font-semibold text-sm ${i === highlightCol ? 'bg-accent-light text-accent' : 'text-text-primary'}`}
+                    className={`p-4 text-left font-outfit font-semibold text-sm ${i === highlightCol ? 'bg-primary-light text-primary' : 'text-text-primary'}`}
                   >
                     {col}
                   </th>
@@ -37,7 +37,7 @@ export default function ComparisonTable({ title, subtitle, columns, rows, highli
               {rows.map((row, ri) => (
                 <tr key={ri} className={`border-b border-border-light last:border-0 ${ri % 2 === 0 ? 'bg-white' : 'bg-bg-main'}`}>
                   <td className="p-4 text-sm font-medium text-text-primary">{row.feature}</td>
-                  <td className={`p-4 text-sm font-semibold ${highlightCol === 1 ? 'bg-accent-light/40' : ''}`}>
+                  <td className={`p-4 text-sm font-semibold ${highlightCol === 1 ? 'bg-primary-light/40' : ''}`}>
                     {typeof row.lumivex === 'boolean' ? (row.lumivex ? '✓' : '✗') : row.lumivex}
                   </td>
                   {row.competitors.map((comp, ci) => (

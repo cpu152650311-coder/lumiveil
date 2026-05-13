@@ -39,7 +39,7 @@ export default function Navigation() {
     >
       <div className="max-w-site mx-auto px-6 h-[72px] flex items-center justify-between gap-8">
         <Link href="/" className="font-outfit text-xl font-extrabold text-text-primary tracking-tight shrink-0" aria-label="Lumivex Home">
-          Lumi<span className="text-accent">vex</span>
+          Lumi<span className="text-primary">vex</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">
@@ -49,8 +49,8 @@ export default function Navigation() {
               href={link.href}
               className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-colors ${
                 pathname === link.href
-                  ? 'text-accent bg-accent-light'
-                  : 'text-text-primary hover:text-accent hover:bg-accent-light/40'
+                  ? 'text-primary bg-primary-light'
+                  : 'text-text-primary hover:text-primary hover:bg-primary-light/40'
               }`}
             >
               {link.label}
@@ -60,7 +60,7 @@ export default function Navigation() {
 
         <div className="flex items-center gap-3">
           <button
-            className="md:hidden flex flex-col gap-[5px] p-2 rounded-lg hover:bg-accent-light/50 transition-colors"
+            className="md:hidden flex flex-col gap-[5px] p-2 rounded-lg hover:bg-primary-light/50 transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
@@ -79,15 +79,15 @@ export default function Navigation() {
             key={link.href}
             href={link.href}
             className={`font-outfit text-lg font-semibold px-5 py-4 rounded-xl transition-colors border-b border-border-light ${
-              pathname === link.href ? 'text-accent bg-accent-light' : 'text-text-primary'
+              pathname === link.href ? 'text-primary bg-primary-light' : 'text-text-primary'
             }`}
           >
             {link.label}
           </Link>
         ))}
-        <div className="mt-6 p-5 bg-accent-light rounded-xl">
+        <div className="mt-6 p-5 bg-primary-light rounded-xl">
           <p className="text-sm text-text-muted leading-relaxed">
-            <strong className="text-accent font-outfit">Lumivex</strong> — Wear the Future. Live the Moment.
+            <strong className="text-primary font-outfit">Lumivex</strong> — Wear the Future. Live the Moment.
           </p>
         </div>
       </div>
