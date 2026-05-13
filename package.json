@@ -5,7 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "m3:preview": "python ../m3-preview-qa.py --site .",
+    "m3:assets": "python ../m3-check-assets.py --site . --phase preview",
+    "m3:links": "python ../m3-check-links.py --site . --phase preview",
+    "m3:placeholders": "python ../m3-check-placeholders.py --site . --phase preview",
+    "m3:claims": "python ../m3-light-claims-scan.py --site . --phase preview"
   },
   "dependencies": {
     "next": "^16.2.6",

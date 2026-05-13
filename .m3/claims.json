@@ -1,0 +1,104 @@
+{
+  "phase": "preview",
+  "blocking": false,
+  "claims": [
+    {
+      "claim": "FDA.cleared",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/layout.tsx"
+    },
+    {
+      "claim": "FDA.cleared",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/page.tsx"
+    },
+    {
+      "claim": "HIPAA.compliant",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/page.tsx"
+    },
+    {
+      "claim": "ISO.13485",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/page.tsx"
+    },
+    {
+      "claim": "certified",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/about/page.tsx"
+    },
+    {
+      "claim": "cure",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/about/page.tsx"
+    },
+    {
+      "claim": "diagnose",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/about/page.tsx"
+    },
+    {
+      "claim": "HIPAA.compliant",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/contact/page.tsx"
+    },
+    {
+      "claim": "cure",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/contact/page.tsx"
+    },
+    {
+      "claim": "FDA.cleared",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/products/page.tsx"
+    },
+    {
+      "claim": "FDA.cleared",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/technology/page.tsx"
+    },
+    {
+      "claim": "clinically.validated",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/technology/page.tsx"
+    },
+    {
+      "claim": "FDA.cleared",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "app/products/[slug]/page.tsx"
+    },
+    {
+      "claim": "medical.grade",
+      "risk": "high",
+      "status": "unverified",
+      "action": "review before production",
+      "found_in": "components/sections/CountUpStats.tsx"
+    }
+  ]
+}

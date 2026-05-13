@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-13T12:52:38+00:00",
+  "generated_at": "2026-05-13T13:14:32+00:00",
   "site_dir": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site",
-  "total": 62,
+  "total": 63,
   "assets": [
     {
       "path": "/generated/about-hero-founders-lab.webp",
@@ -65,6 +65,18 @@
       "type": "blog_cover",
       "used_by": [
         "lib/posts.ts"
+      ]
+    },
+    {
+      "path": "/generated/brand-hero-bg.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\brand-hero-bg.webp",
+      "size": 1082377,
+      "sha256": "2eedcf11ff8c59d96b94585dd19b7dbc303d9ba3fbd3566b84cfb3d3c40826f1",
+      "type": "hero_image",
+      "used_by": [
+        "app/about/page.tsx",
+        "app/products/page.tsx",
+        "app/technology/page.tsx"
       ]
     },
     {

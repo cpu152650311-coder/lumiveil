@@ -1,13 +1,32 @@
 {
   "phase": "preview",
   "status": "pass",
-  "updated_at": "2026-05-13T12:54:54+00:00",
+  "updated_at": "2026-05-13T13:14:44+00:00",
   "checks": [
     {
-      "name": "links",
+      "name": "tailwind",
       "status": "pass",
-      "checked": 13,
-      "errors": []
+      "message": "OK"
+    },
+    {
+      "name": "asset_manifest",
+      "status": "pass"
+    },
+    {
+      "name": "assets",
+      "status": "pass"
+    },
+    {
+      "name": "links",
+      "status": "pass"
+    },
+    {
+      "name": "placeholders",
+      "status": "pass"
+    },
+    {
+      "name": "next_build",
+      "status": "pass"
     }
   ]
 }
