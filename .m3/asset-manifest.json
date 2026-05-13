@@ -1,0 +1,603 @@
+{
+  "generated_at": "2026-05-13T12:52:38+00:00",
+  "site_dir": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site",
+  "total": 62,
+  "assets": [
+    {
+      "path": "/generated/about-hero-founders-lab.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\about-hero-founders-lab.webp",
+      "size": 463454,
+      "sha256": "019c7a35f4e619ebcbe36a6947c01ff45522ecd188d064ee6a48461d733bac7e",
+      "type": "hero_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/about-team.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\about-team.webp",
+      "size": 463454,
+      "sha256": "019c7a35f4e619ebcbe36a6947c01ff45522ecd188d064ee6a48461d733bac7e",
+      "type": "illustration",
+      "used_by": []
+    },
+    {
+      "path": "/generated/blog-cover-bp.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\blog-cover-bp.webp",
+      "size": 584215,
+      "sha256": "4143aa31755329027f075845c82a89c6343f2ba9028d22e85c9039697671c5b5",
+      "type": "blog_cover",
+      "used_by": [
+        "lib/posts.ts"
+      ]
+    },
+    {
+      "path": "/generated/blog-cover-ecg.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\blog-cover-ecg.webp",
+      "size": 360087,
+      "sha256": "f6945ea02e9e1a586a3f0246c3e65586cc0d2fb051a50b623977c3c8ad860ad0",
+      "type": "blog_cover",
+      "used_by": [
+        "lib/posts.ts"
+      ]
+    },
+    {
+      "path": "/generated/blog-cover-fitness.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\blog-cover-fitness.webp",
+      "size": 482150,
+      "sha256": "d297b75078f65d7145614225b719535b8a02b9cd7c01682785d2915e5f586f28",
+      "type": "blog_cover",
+      "used_by": [
+        "lib/posts.ts"
+      ]
+    },
+    {
+      "path": "/generated/blog-cover-gps.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\blog-cover-gps.webp",
+      "size": 1147514,
+      "sha256": "293fde15142c3879c007f1fd9ee8caecbb0c3f107b00dc74b87ded935290099a",
+      "type": "blog_cover",
+      "used_by": []
+    },
+    {
+      "path": "/generated/blog-cover-sleep.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\blog-cover-sleep.webp",
+      "size": 1306214,
+      "sha256": "3d15253519a99c319a863633608bf1a17bc7a414f69cb7fdcb04e42cdd481475",
+      "type": "blog_cover",
+      "used_by": [
+        "lib/posts.ts"
+      ]
+    },
+    {
+      "path": "/generated/brand-hero-wide.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\brand-hero-wide.webp",
+      "size": 1526489,
+      "sha256": "663b6b445d62924948c57b1e6a4dff4774d575e81c6bf0b58119d7cc12209b61",
+      "type": "hero_image",
+      "used_by": [
+        "lib/posts.ts"
+      ]
+    },
+    {
+      "path": "/generated/brand-materials-collage.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\brand-materials-collage.webp",
+      "size": 1948381,
+      "sha256": "965dbc7800d0d0eec28f75d4c59b23d4b30534c769d6af41cd9877a3f38b5149",
+      "type": "brand_asset",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/brand-trust-bg.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\brand-trust-bg.webp",
+      "size": 1100394,
+      "sha256": "9d9a2e61f95ca86834c9811f354dca3c53785948426a77ca9305c6048ad9a53f",
+      "type": "brand_asset",
+      "used_by": []
+    },
+    {
+      "path": "/generated/hero-apex-product.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\hero-apex-product.webp",
+      "size": 780395,
+      "sha256": "410a5844a081457f37d5199a81bb0be0a82fdaefea493cd3d8292749a9d8aa8c",
+      "type": "product_image",
+      "used_by": [
+        "app/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/hero-apex-raw.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\hero-apex-raw.webp",
+      "size": 907173,
+      "sha256": "4258cec4541a10b806e26e56f031fce15daf23062f58027b9cff02ea84c21d8b",
+      "type": "hero_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/hero-apex.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\hero-apex.webp",
+      "size": 879606,
+      "sha256": "494dda8845cf7ede95c80b6b6324c72cbcc70535eaf9f2d7c1d15f19673c1d92",
+      "type": "hero_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/hero-watch-dark.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\hero-watch-dark.webp",
+      "size": 182090,
+      "sha256": "4df3f62393ac3323df2ebb95d78ec5d84c99540d5765831e6cfd2d10cc4cc771",
+      "type": "hero_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/lifestyle-runner-v2.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lifestyle-runner-v2.webp",
+      "size": 1435945,
+      "sha256": "f705f9268bdf25ed8291f5542a926ce316dfa1c1a6fd4d90abaf2ad0e59b0f04",
+      "type": "lifestyle_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/lifestyle-runner.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lifestyle-runner.webp",
+      "size": 301192,
+      "sha256": "f02579dda150fe8b257a216fbf96ada5ccb28a4218d68cdeaa91e36c2af76273",
+      "type": "lifestyle_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/lifestyle-wellness.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lifestyle-wellness.webp",
+      "size": 1285532,
+      "sha256": "bcc3a554ad85e1ff4ca29ae6bfa23fa2e4e652ee4606acd83583b3782011c6cd",
+      "type": "lifestyle_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/lumivex-apex-raw.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-apex-raw.webp",
+      "size": 572562,
+      "sha256": "ac3fcb025724e867be4a4406e7154c36cfd24fa20716c52c7d2a799526384f29",
+      "type": "product_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/lumivex-apex-sport-raw.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-apex-sport-raw.webp",
+      "size": 690788,
+      "sha256": "ae5195b43b13a476d59ef60ea9e90940553051459153aee1f999f7636a4e062f",
+      "type": "product_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/lumivex-apex-sport.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-apex-sport.webp",
+      "size": 733074,
+      "sha256": "8d1f538a25ac69883a602a562f0784bff91c1d5d8427a98f5469dd53d7b3bb2b",
+      "type": "product_image",
+      "used_by": [
+        "app/page.tsx",
+        "components/sections/TestimonialCarousel.tsx",
+        "app/products/page.tsx",
+        "lib/products.ts"
+      ]
+    },
+    {
+      "path": "/generated/lumivex-apex.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-apex.webp",
+      "size": 698098,
+      "sha256": "54a80d98e9de94019ea7b08f72d75b4315ca63cc5fe0e16716052aa442f2b601",
+      "type": "product_image",
+      "used_by": [
+        "app/page.tsx",
+        "components/sections/TestimonialCarousel.tsx",
+        "components/sections/VideoPlayer.tsx",
+        "components/sections/VideoPlayer.tsx",
+        "app/blog/page.tsx",
+        "app/products/page.tsx",
+        "lib/products.ts"
+      ]
+    },
+    {
+      "path": "/generated/lumivex-core-raw.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-core-raw.webp",
+      "size": 593159,
+      "sha256": "dc028de2fa6d5d1dc1551378584cc202868471f863c68675ebfa3640d93841d0",
+      "type": "product_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/lumivex-core.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-core.webp",
+      "size": 656497,
+      "sha256": "744ce96748bc68a1fe88bbeb948d0205915ae6fa7e5c863531c106e680b74d60",
+      "type": "product_image",
+      "used_by": [
+        "app/page.tsx",
+        "app/products/page.tsx",
+        "lib/products.ts"
+      ]
+    },
+    {
+      "path": "/generated/lumivex-pulse-kids-raw.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-pulse-kids-raw.webp",
+      "size": 368292,
+      "sha256": "bed644b0f3e538d068ae538c28e844c913db10bd9744ae85a3816052ace42357",
+      "type": "product_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/lumivex-pulse-kids.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-pulse-kids.webp",
+      "size": 563565,
+      "sha256": "70294212accdffffa7889157999d27519a1ce6dd7da8e6f2777a04dba7701e99",
+      "type": "product_image",
+      "used_by": [
+        "app/page.tsx",
+        "app/products/page.tsx",
+        "lib/products.ts"
+      ]
+    },
+    {
+      "path": "/generated/lumivex-pulse-raw.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-pulse-raw.webp",
+      "size": 472919,
+      "sha256": "eccc1ef989a4f93cd166ba3f12aecafe28027c6eb7e05ce09e258e728eb31a3a",
+      "type": "product_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/lumivex-pulse.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\lumivex-pulse.webp",
+      "size": 570390,
+      "sha256": "b04a8ac39e28b76480fc9497ee1a1b5babb8d1e4ebec5bf21171ca96585190a1",
+      "type": "product_image",
+      "used_by": [
+        "app/page.tsx",
+        "components/sections/TestimonialCarousel.tsx",
+        "app/products/page.tsx",
+        "lib/products.ts"
+      ]
+    },
+    {
+      "path": "/generated/press-cnet.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\press-cnet.webp",
+      "size": 312527,
+      "sha256": "9ea13ba7463eca4b1c30bdecbe3946548f7fb177de1e02e4a2fa21d805284129",
+      "type": "press_logo",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/press-forbes-health.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\press-forbes-health.webp",
+      "size": 312527,
+      "sha256": "9ea13ba7463eca4b1c30bdecbe3946548f7fb177de1e02e4a2fa21d805284129",
+      "type": "press_logo",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/press-techcrunch.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\press-techcrunch.webp",
+      "size": 312527,
+      "sha256": "9ea13ba7463eca4b1c30bdecbe3946548f7fb177de1e02e4a2fa21d805284129",
+      "type": "tech_image",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/press-the-verge.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\press-the-verge.webp",
+      "size": 312527,
+      "sha256": "9ea13ba7463eca4b1c30bdecbe3946548f7fb177de1e02e4a2fa21d805284129",
+      "type": "press_logo",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/press-time.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\press-time.webp",
+      "size": 312527,
+      "sha256": "9ea13ba7463eca4b1c30bdecbe3946548f7fb177de1e02e4a2fa21d805284129",
+      "type": "press_logo",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/press-wired.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\press-wired.webp",
+      "size": 312527,
+      "sha256": "9ea13ba7463eca4b1c30bdecbe3946548f7fb177de1e02e4a2fa21d805284129",
+      "type": "press_logo",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/product-lineup.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\product-lineup.webp",
+      "size": 309655,
+      "sha256": "1ceaf28f9011949cdcde35cc5c1227a1b11880e0029298fceb872dbc4dd92da3",
+      "type": "product_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/sapphire-closeup.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\sapphire-closeup.webp",
+      "size": 214654,
+      "sha256": "8651bdde374ccd5dbfb22f32c7894f29ed76085f4e0639ab1fb797fddfc90b3d",
+      "type": "image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/scene-family.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\scene-family.webp",
+      "size": 1639559,
+      "sha256": "2decd3b8265761d2f55b9054895a893b9afbe85ef0f76e5def980c98f26a2546",
+      "type": "lifestyle_image",
+      "used_by": [
+        "lib/posts.ts"
+      ]
+    },
+    {
+      "path": "/generated/scene-gym.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\scene-gym.webp",
+      "size": 1402968,
+      "sha256": "8f71012c958ba687372dccf2856af32419909d03ee1b3e5cc24ccb06b9a5762c",
+      "type": "lifestyle_image",
+      "used_by": [
+        "lib/posts.ts"
+      ]
+    },
+    {
+      "path": "/generated/scene-mountain.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\scene-mountain.webp",
+      "size": 1259714,
+      "sha256": "1242ded5fe4cdbd154c04a7c2dde4adc783e33f5ad496a0220a0156a399724d7",
+      "type": "lifestyle_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/scene-office.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\scene-office.webp",
+      "size": 1459672,
+      "sha256": "235b90d86e2a2131e56d93d171bb073507e535da62f4fd0d84dc4fe9d82b2248",
+      "type": "lifestyle_image",
+      "used_by": [
+        "lib/posts.ts"
+      ]
+    },
+    {
+      "path": "/generated/sensor-ecg-back.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\sensor-ecg-back.webp",
+      "size": 1439178,
+      "sha256": "e38569f4eb8ee0c8a98ff07cf0e3c0edbd2da093b7d93f14f14f17ce2c76c2c6",
+      "type": "tech_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/sensor-exploded.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\sensor-exploded.webp",
+      "size": 337032,
+      "sha256": "8e9e017df2ab41aa1bd5a0b2de50ca06c1b18728cab3b1b3dccdf23b510e84cc",
+      "type": "tech_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/team-anika-sharma.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-anika-sharma.webp",
+      "size": 463454,
+      "sha256": "019c7a35f4e619ebcbe36a6947c01ff45522ecd188d064ee6a48461d733bac7e",
+      "type": "illustration",
+      "used_by": []
+    },
+    {
+      "path": "/generated/team-illustration-1.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-illustration-1.webp",
+      "size": 1175675,
+      "sha256": "3a26546491132d14d5ce19c945420bb802c846cd8e1bcef759157e6367bbc573",
+      "type": "illustration",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/team-illustration-2.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-illustration-2.webp",
+      "size": 1370746,
+      "sha256": "06d340a6d48ec0860c0833d1b3b5651bb24ca34bb03b1fd86d98e896423f1157",
+      "type": "illustration",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/team-illustration-3.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-illustration-3.webp",
+      "size": 564319,
+      "sha256": "3badada0014a88081c02e5856a8e5e65487f10bee668c697dcd4f4e341a6f366",
+      "type": "illustration",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/team-illustration-4.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-illustration-4.webp",
+      "size": 1225679,
+      "sha256": "35f793c14f63a23ab4a5a8ae943f63d22d0a1d015d7fb2236bac817ab529211a",
+      "type": "illustration",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/team-illustration-5.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-illustration-5.webp",
+      "size": 553653,
+      "sha256": "6686b312eda7a623806d7c251e4b59328c78ec36d2e96747960798fb3b48ac05",
+      "type": "illustration",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/team-illustration-6.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-illustration-6.webp",
+      "size": 634444,
+      "sha256": "664909e83ba422f9ce8b60fe5454a35f757be54308a59f3e582654400bb7dcc4",
+      "type": "illustration",
+      "used_by": [
+        "app/about/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/team-james-whitfield.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-james-whitfield.webp",
+      "size": 463454,
+      "sha256": "019c7a35f4e619ebcbe36a6947c01ff45522ecd188d064ee6a48461d733bac7e",
+      "type": "illustration",
+      "used_by": []
+    },
+    {
+      "path": "/generated/team-marcus-chen.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-marcus-chen.webp",
+      "size": 463454,
+      "sha256": "019c7a35f4e619ebcbe36a6947c01ff45522ecd188d064ee6a48461d733bac7e",
+      "type": "illustration",
+      "used_by": []
+    },
+    {
+      "path": "/generated/team-priya-nair.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-priya-nair.webp",
+      "size": 463454,
+      "sha256": "019c7a35f4e619ebcbe36a6947c01ff45522ecd188d064ee6a48461d733bac7e",
+      "type": "illustration",
+      "used_by": []
+    },
+    {
+      "path": "/generated/team-sofia-reyes.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-sofia-reyes.webp",
+      "size": 463454,
+      "sha256": "019c7a35f4e619ebcbe36a6947c01ff45522ecd188d064ee6a48461d733bac7e",
+      "type": "illustration",
+      "used_by": []
+    },
+    {
+      "path": "/generated/team-tobias-muller.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\team-tobias-muller.webp",
+      "size": 463454,
+      "sha256": "019c7a35f4e619ebcbe36a6947c01ff45522ecd188d064ee6a48461d733bac7e",
+      "type": "illustration",
+      "used_by": []
+    },
+    {
+      "path": "/generated/tech-design-concept.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\tech-design-concept.webp",
+      "size": 1410014,
+      "sha256": "e8cbaaaec038814fdbe07d833d383c49d2dc210781ab2ec34352d99832b363c0",
+      "type": "tech_image",
+      "used_by": [
+        "app/technology/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/tech-production-line.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\tech-production-line.webp",
+      "size": 1541759,
+      "sha256": "27917c7621731550921371087380d2ee60634fd3e96d690c67876a004db77d17",
+      "type": "product_image",
+      "used_by": [
+        "app/technology/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/tech-sensor-wafer.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\tech-sensor-wafer.webp",
+      "size": 1918650,
+      "sha256": "7908ab509a01e2e5bbe26c299b33ee4f893b2d906906d79a1002bcae4393b4c0",
+      "type": "tech_image",
+      "used_by": [
+        "app/technology/page.tsx"
+      ]
+    },
+    {
+      "path": "/generated/technology-sensors.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\technology-sensors.webp",
+      "size": 312527,
+      "sha256": "9ea13ba7463eca4b1c30bdecbe3946548f7fb177de1e02e4a2fa21d805284129",
+      "type": "tech_image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/test-gpt-image2.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\test-gpt-image2.webp",
+      "size": 729066,
+      "sha256": "10f19c21aab0530185e098a4b5273ab52350f2bb5b7bf143548ba9eedc68ef49",
+      "type": "image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/titanium-texture.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\titanium-texture.webp",
+      "size": 799342,
+      "sha256": "5bae847fa1ef9eb7eb430a7847fc23a6a43b3f75f240b4d3f12e9556e2208730",
+      "type": "image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/watch-sleep.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\watch-sleep.webp",
+      "size": 1240693,
+      "sha256": "029f8873edd775f597ad84f71acb2bf1fa8fad2007e7719b9bf1926d18b280cd",
+      "type": "image",
+      "used_by": []
+    },
+    {
+      "path": "/generated/watch-underwater.webp",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\generated\\watch-underwater.webp",
+      "size": 1576646,
+      "sha256": "15bd623106712f5bc53806163436ea71909ccb368912634cd20dc5bbe3b649e9",
+      "type": "image",
+      "used_by": []
+    },
+    {
+      "path": "/video/hero-showcase.mp4",
+      "absolute": "C:\\Users\\Quentel\\Downloads\\ClaudeCode\\test\\lumiveil-site\\public\\video\\hero-showcase.mp4",
+      "size": 2378304,
+      "sha256": "65a87bd9dc0323be17165975ea35c2dacddc3d58b49a68fd93a1431f8be0264c",
+      "type": "video",
+      "used_by": [
+        "app/page.tsx",
+        "components/sections/VideoPlayer.tsx"
+      ]
+    }
+  ],
+  "duplicates": [
+    [
+      "/generated/about-hero-founders-lab.webp",
+      "/generated/about-team.webp",
+      "/generated/team-anika-sharma.webp",
+      "/generated/team-james-whitfield.webp",
+      "/generated/team-marcus-chen.webp",
+      "/generated/team-priya-nair.webp",
+      "/generated/team-sofia-reyes.webp",
+      "/generated/team-tobias-muller.webp"
+    ],
+    [
+      "/generated/press-cnet.webp",
+      "/generated/press-forbes-health.webp",
+      "/generated/press-techcrunch.webp",
+      "/generated/press-the-verge.webp",
+      "/generated/press-time.webp",
+      "/generated/press-wired.webp",
+      "/generated/technology-sensors.webp"
+    ]
+  ]
+}

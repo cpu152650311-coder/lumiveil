@@ -1,0 +1,13 @@
+{
+  "phase": "preview",
+  "status": "pass",
+  "updated_at": "2026-05-13T12:54:54+00:00",
+  "checks": [
+    {
+      "name": "links",
+      "status": "pass",
+      "checked": 13,
+      "errors": []
+    }
+  ]
+}
