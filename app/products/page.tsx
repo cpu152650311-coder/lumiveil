@@ -110,6 +110,27 @@ export default function ProductsPage() {
         ]}
       />
 
+      {/* Which watch is right for you? */}
+      <section className="bg-bg-main py-20 px-6">
+        <div className="max-w-site mx-auto text-center mb-10">
+          <p className="font-outfit text-sm uppercase tracking-widest text-text-muted mb-3">Scene Adapter</p>
+          <h2 className="font-outfit text-3xl font-bold text-text-primary">Which Lumivex is right for you?</h2>
+        </div>
+        <div className="max-w-site mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            { who: 'The Athlete', watch: 'Apex Sport', why: '40+ sport profiles, dual-band GPS, MIL-STD-810H rated. Built for ultra-marathons and mountain summits.', price: 549 },
+            { who: 'The Health Optimizer', watch: 'Apex or Pulse', why: 'FDA-cleared ECG, cuffless blood pressure, sleep apnea scoring. Clinical accuracy for proactive health management.', price: 299 },
+            { who: 'The Everyday Wellness Seeker', watch: 'Core', why: 'Heart rate, SpO2, sleep tracking, stress monitoring. Everything you need at an accessible price.', price: 179 },
+          ].map((s, i) => (
+            <div key={i} className="bg-white rounded-2xl border border-border-light p-6 hover:shadow-card transition-shadow">
+              <p className="font-outfit font-bold text-text-primary text-lg">{s.who}</p>
+              <p className="text-accent font-semibold text-sm mt-1">→ {s.watch} (from ${s.price})</p>
+              <p className="text-text-muted text-sm mt-3 leading-relaxed">{s.why}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <ComparisonTable
         title="Not Sure Which to Choose?"
         subtitle="Side-by-side specs across the full lineup."

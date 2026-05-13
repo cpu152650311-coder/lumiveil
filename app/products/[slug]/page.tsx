@@ -189,6 +189,19 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Scene Adapter */}
+      <section className="bg-bg-main py-16 px-6">
+        <div className="max-w-site mx-auto text-center">
+          <p className="font-outfit text-sm uppercase tracking-widest text-text-muted mb-3">Perfect for</p>
+          <h2 className="font-outfit text-2xl font-bold text-text-primary mb-8">Who is the {product.name} for?</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
+            {[['🏃','Endurance athletes','Dual-band GPS, VO2 max, recovery scoring'],['💓','Health optimizers','FDA-cleared ECG, blood pressure, sleep apnea'],['💼','Professionals','Titanium design, stress index, focus tracking']].map((s,i) => (
+              <div key={i} className="bg-white rounded-xl border border-border-light p-5 text-center"><span className="text-3xl block mb-2">{s[0]}</span><p className="font-outfit font-bold text-text-primary text-sm">{s[1]}</p><p className="text-text-muted text-xs mt-1">{s[2]}</p></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CTASection
         title="30-Day Risk-Free Trial"
         subtitle="If it doesn't change how you understand your health, return it. No questions asked."
