@@ -10,7 +10,7 @@ export interface Post extends PostMeta {
   quality?: { seoScore?: number; passed?: boolean; aiGenerated?: boolean };
 }
 
-const RAW_BASE = "https://raw.githubusercontent.com/cpu152650311-coder/lumiveil/main/public/content";
+const RAW_BASE = "https://raw.githubusercontent.com/cpu152650311-coder/lumiveil/master/public/content";
 const INDEX_URL = RAW_BASE + "/posts-index.json";
 const POST_URL = (slug: string) => RAW_BASE + "/posts/" + slug + ".json";
 
