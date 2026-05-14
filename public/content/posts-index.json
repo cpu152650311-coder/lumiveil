@@ -1,8 +1,21 @@
 [
   {
+    "slug": "isr-test-post-20260514",
+    "title": "ISR TEST: This post was added via GitHub API without rebuild",
+    "excerpt": "If you can read this, ISR is working ¡ª no Vercel deploy was triggered.",
+    "category": "Test",
+    "author": "M3 Bot",
+    "readTime": "1 min",
+    "date": "2026-05-14",
+    "coverImage": "/generated/blog-cover-ecg.webp",
+    "tags": [
+      "test"
+    ]
+  },
+  {
     "slug": "ecg-smartwatches-2025",
     "title": "ECG Smartwatches: What They Can and Cannot Detect in 2025",
-    "excerpt": "From AFib to long QT syndrome — a cardiologist explains what consumer ECG can actually find.",
+    "excerpt": "From AFib to long QT syndrome ¡ª a cardiologist explains what consumer ECG can actually find.",
     "category": "Heart Health",
     "author": "Dr. Tobias Muller",
     "readTime": "8 min",
