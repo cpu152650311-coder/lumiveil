@@ -1,0 +1,21 @@
+{
+  "slug": "firmware-4-2",
+  "title": "Firmware 4.2: Readiness Score 2.0 and Sleep Staging",
+  "excerpt": "The biggest update this year adds REM/deep sleep staging and a redesigned readiness algorithm.",
+  "category": "Product Updates",
+  "author": "James Whitfield",
+  "readTime": "5 min",
+  "date": "2025-11-18",
+  "coverImage": "/generated/scene-office.webp",
+  "tags": [
+    "firmware",
+    "update",
+    "readiness"
+  ],
+  "content": "<p>Full article content for Firmware 4.2: Readiness Score 2.0 and Sleep Staging...</p>",
+  "quality": {
+    "seoScore": 85,
+    "passed": true,
+    "aiGenerated": true
+  }
+}

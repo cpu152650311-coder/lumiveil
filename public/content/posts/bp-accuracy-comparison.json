@@ -1,0 +1,21 @@
+{
+  "slug": "bp-accuracy-comparison",
+  "title": "Blood Pressure Accuracy: Smartwatch vs. Cuff vs. Arterial Line",
+  "excerpt": "Three measurement methods compared head-to-head in a 500-person study.",
+  "category": "Research",
+  "author": "Dr. Marcus Chen",
+  "readTime": "10 min",
+  "date": "2025-12-05",
+  "coverImage": "/generated/blog-cover-bp.webp",
+  "tags": [
+    "blood pressure",
+    "research",
+    "accuracy"
+  ],
+  "content": "<p>Full article content for Blood Pressure Accuracy: Smartwatch vs. Cuff vs. Arterial Line...</p>",
+  "quality": {
+    "seoScore": 85,
+    "passed": true,
+    "aiGenerated": true
+  }
+}

@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "ecg-smartwatches-2025",
+    "title": "ECG Smartwatches: What They Can and Cannot Detect in 2025",
+    "excerpt": "From AFib to long QT syndrome — a cardiologist explains what consumer ECG can actually find.",
+    "category": "Heart Health",
+    "author": "Dr. Tobias Muller",
+    "readTime": "8 min",
+    "date": "2025-12-02",
+    "coverImage": "/generated/blog-cover-ecg.webp",
+    "tags": [
+      "ECG",
+      "heart health",
+      "AFib",
+      "medical"
+    ]
+  },
+  {
+    "slug": "sleep-score-dropped",
+    "title": "Why Your Sleep Score Dropped and What to Do About It",
+    "excerpt": "Five most common drivers of poor sleep scores and exactly how to fix each one.",
+    "category": "Sleep",
+    "author": "Dr. Anika Sharma",
+    "readTime": "6 min",
+    "date": "2025-11-28",
+    "coverImage": "/generated/blog-cover-sleep.webp",
+    "tags": [
+      "sleep",
+      "recovery",
+      "wellness"
+    ]
+  },
+  {
+    "slug": "hrv-explained",
+    "title": "Heart Rate Variability: What Your Watch Is Trying to Tell You",
+    "excerpt": "HRV is the most misunderstood health metric. What a high or low score actually means.",
+    "category": "Fitness",
+    "author": "Dr. Marcus Chen",
+    "readTime": "7 min",
+    "date": "2025-12-01",
+    "coverImage": "/generated/blog-cover-fitness.webp",
+    "tags": [
+      "HRV",
+      "fitness",
+      "recovery"
+    ]
+  },
+  {
+    "slug": "smartwatch-buying-guide",
+    "title": "Smartwatch Buying Guide 2025: The Only Comparison That Matters",
+    "excerpt": "14 smartwatches tested for health accuracy. Only four passed clinical benchmarks.",
+    "category": "Buying Guides",
+    "author": "James Whitfield",
+    "readTime": "12 min",
+    "date": "2025-11-20",
+    "coverImage": "/generated/brand-hero-wide.webp",
+    "tags": [
+      "buying guide",
+      "comparison",
+      "smartwatch"
+    ]
+  },
+  {
+    "slug": "bp-accuracy-comparison",
+    "title": "Blood Pressure Accuracy: Smartwatch vs. Cuff vs. Arterial Line",
+    "excerpt": "Three measurement methods compared head-to-head in a 500-person study.",
+    "category": "Research",
+    "author": "Dr. Marcus Chen",
+    "readTime": "10 min",
+    "date": "2025-12-05",
+    "coverImage": "/generated/blog-cover-bp.webp",
+    "tags": [
+      "blood pressure",
+      "research",
+      "accuracy"
+    ]
+  },
+  {
+    "slug": "best-swim-smartwatch",
+    "title": "Best Smartwatch for Swimming: Pool, Open Water, Triathlon",
+    "excerpt": "Six watches tested in pool and open water. GPS accuracy and heart rate compared.",
+    "category": "Fitness",
+    "author": "Sofia Reyes",
+    "readTime": "9 min",
+    "date": "2025-11-25",
+    "coverImage": "/generated/scene-gym.webp",
+    "tags": [
+      "swimming",
+      "fitness",
+      "GPS"
+    ]
+  },
+  {
+    "slug": "sleep-apnea-home",
+    "title": "Sleep Apnea Detection at Home: What Your Watch Can and Cannot Do",
+    "excerpt": "Consumer SpO2 monitoring is improving fast but is not a substitute for a sleep study.",
+    "category": "Sleep",
+    "author": "Dr. Anika Sharma",
+    "readTime": "8 min",
+    "date": "2025-11-12",
+    "coverImage": "/generated/scene-family.webp",
+    "tags": [
+      "sleep apnea",
+      "SpO2",
+      "health"
+    ]
+  },
+  {
+    "slug": "firmware-4-2",
+    "title": "Firmware 4.2: Readiness Score 2.0 and Sleep Staging",
+    "excerpt": "The biggest update this year adds REM/deep sleep staging and a redesigned readiness algorithm.",
+    "category": "Product Updates",
+    "author": "James Whitfield",
+    "readTime": "5 min",
+    "date": "2025-11-18",
+    "coverImage": "/generated/scene-office.webp",
+    "tags": [
+      "firmware",
+      "update",
+      "readiness"
+    ]
+  }
+]
