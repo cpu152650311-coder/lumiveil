@@ -1,123 +1,46 @@
 [
   {
-    "slug": "ecg-smartwatches-2025",
-    "title": "ECG Smartwatches: What They Can and Cannot Detect in 2025",
-    "excerpt": "From AFib to long QT syndrome ¡ª a cardiologist explains what consumer ECG can actually find.",
-    "category": "Heart Health",
-    "author": "Dr. Tobias Muller",
-    "readTime": "8 min",
-    "date": "2025-12-02",
-    "coverImage": "/generated/blog-cover-ecg.webp",
-    "tags": [
-      "ECG",
-      "heart health",
-      "AFib",
-      "medical"
-    ]
+    "slug": "firmware-4-2-sleep-staging",
+    "title": "Firmware 4.2: Sleep Staging, Readiness 2.0, and Three Small Fixes We're Proud Of",
+    "excerpt": "The biggest Lumivex update this year: REM detection, deep sleep tracking, and a readiness score that actually makes sense.",
+    "category": "Product Updates",
+    "author": "Sofia Reyes",
+    "readTime": "4 min",
+    "date": "2025-12-18",
+    "coverImage": "/generated/tech-production-line.webp",
+    "tags": ["firmware", "update", "sleep", "readiness"]
   },
   {
-    "slug": "sleep-score-dropped",
-    "title": "Why Your Sleep Score Dropped and What to Do About It",
-    "excerpt": "Five most common drivers of poor sleep scores and exactly how to fix each one.",
-    "category": "Sleep",
-    "author": "Dr. Anika Sharma",
+    "slug": "why-we-built-lumivex",
+    "title": "Why We Built Lumivex — A Letter from Our Founders",
+    "excerpt": "Two engineers walk into a hospital waiting room. That's not a joke — it's how Lumivex started.",
+    "category": "Inside Lumivex",
+    "author": "Dr. Anika Sharma & James Whitfield",
+    "readTime": "5 min",
+    "date": "2025-12-15",
+    "coverImage": "/generated/brand-materials-collage.webp",
+    "tags": ["founders", "mission", "health tech"]
+  },
+  {
+    "slug": "designing-apex-titanium",
+    "title": "Designing the Apex: 14 Months of Titanium, Sweat, and One Very Expensive Mistake",
+    "excerpt": "The industrial design story behind Lumivex Apex — including the prototype that cost us $47,000.",
+    "category": "Design & Engineering",
+    "author": "James Whitfield",
     "readTime": "6 min",
-    "date": "2025-11-28",
-    "coverImage": "/generated/blog-cover-sleep.webp",
-    "tags": [
-      "sleep",
-      "recovery",
-      "wellness"
-    ]
+    "date": "2025-11-20",
+    "coverImage": "/generated/tech-design-concept.webp",
+    "tags": ["design", "engineering", "titanium", "Apex"]
   },
   {
-    "slug": "hrv-explained",
-    "title": "Heart Rate Variability: What Your Watch Is Trying to Tell You",
-    "excerpt": "HRV is the most misunderstood health metric. What a high or low score actually means.",
-    "category": "Fitness",
+    "slug": "how-healthcore-ai-works",
+    "title": "How HealthCore AI Learns Your Body's Rhythm — And Alerts You Before Something's Wrong",
+    "excerpt": "A deep dive into the on-device AI engine that powers every Lumivex. No cloud. No latency. No privacy tradeoffs.",
+    "category": "Technology",
     "author": "Dr. Marcus Chen",
     "readTime": "7 min",
-    "date": "2025-12-01",
-    "coverImage": "/generated/blog-cover-fitness.webp",
-    "tags": [
-      "HRV",
-      "fitness",
-      "recovery"
-    ]
-  },
-  {
-    "slug": "smartwatch-buying-guide",
-    "title": "Smartwatch Buying Guide 2025: The Only Comparison That Matters",
-    "excerpt": "14 smartwatches tested for health accuracy. Only four passed clinical benchmarks.",
-    "category": "Buying Guides",
-    "author": "James Whitfield",
-    "readTime": "12 min",
-    "date": "2025-11-20",
-    "coverImage": "/generated/brand-hero-wide.webp",
-    "tags": [
-      "buying guide",
-      "comparison",
-      "smartwatch"
-    ]
-  },
-  {
-    "slug": "bp-accuracy-comparison",
-    "title": "Blood Pressure Accuracy: Smartwatch vs. Cuff vs. Arterial Line",
-    "excerpt": "Three measurement methods compared head-to-head in a 500-person study.",
-    "category": "Research",
-    "author": "Dr. Marcus Chen",
-    "readTime": "10 min",
-    "date": "2025-12-05",
-    "coverImage": "/generated/blog-cover-bp.webp",
-    "tags": [
-      "blood pressure",
-      "research",
-      "accuracy"
-    ]
-  },
-  {
-    "slug": "best-swim-smartwatch",
-    "title": "Best Smartwatch for Swimming: Pool, Open Water, Triathlon",
-    "excerpt": "Six watches tested in pool and open water. GPS accuracy and heart rate compared.",
-    "category": "Fitness",
-    "author": "Sofia Reyes",
-    "readTime": "9 min",
-    "date": "2025-11-25",
-    "coverImage": "/generated/scene-gym.webp",
-    "tags": [
-      "swimming",
-      "fitness",
-      "GPS"
-    ]
-  },
-  {
-    "slug": "sleep-apnea-home",
-    "title": "Sleep Apnea Detection at Home: What Your Watch Can and Cannot Do",
-    "excerpt": "Consumer SpO2 monitoring is improving fast but is not a substitute for a sleep study.",
-    "category": "Sleep",
-    "author": "Dr. Anika Sharma",
-    "readTime": "8 min",
-    "date": "2025-11-12",
-    "coverImage": "/generated/scene-family.webp",
-    "tags": [
-      "sleep apnea",
-      "SpO2",
-      "health"
-    ]
-  },
-  {
-    "slug": "firmware-4-2",
-    "title": "Firmware 4.2: Readiness Score 2.0 and Sleep Staging",
-    "excerpt": "The biggest update this year adds REM/deep sleep staging and a redesigned readiness algorithm.",
-    "category": "Product Updates",
-    "author": "James Whitfield",
-    "readTime": "5 min",
-    "date": "2025-11-18",
-    "coverImage": "/generated/scene-office.webp",
-    "tags": [
-      "firmware",
-      "update",
-      "readiness"
-    ]
+    "date": "2025-11-08",
+    "coverImage": "/generated/tech-sensor-wafer.webp",
+    "tags": ["AI", "HealthCore", "machine learning", "privacy"]
   }
 ]

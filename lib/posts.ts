@@ -1,4 +1,4 @@
-"Content layer: fetch blog posts from GitHub raw JSON with ISR + fallback to local data.";
+"Content layer: blog posts from local JSON — statically imported for build-time inlining.";
 import { cache } from "react";
 
 export interface PostMeta { slug: string; title: string; excerpt: string; category: string; author: string; readTime: string; date: string; coverImage: string; tags?: string[]; }
@@ -10,33 +10,29 @@ export interface Post extends PostMeta {
   quality?: { seoScore?: number; passed?: boolean; aiGenerated?: boolean };
 }
 
-const RAW_BASE = "https://raw.githubusercontent.com/cpu152650311-coder/lumiveil/master/public/content";
-const INDEX_URL = RAW_BASE + "/posts-index.json";
-const POST_URL = (slug: string) => RAW_BASE + "/posts/" + slug + ".json";
+// Static imports — inlined at build time, no fs dependency
+import postsIndex from "@/public/content/posts-index.json";
 
-export const revalidate = 60; // ISR: refresh every 60 seconds
+// Dynamic post imports via mapping
+const postModules: Record<string, () => Promise<Post>> = {
+  "why-we-built-lumivex": () => import("@/public/content/posts/why-we-built-lumivex.json").then(m => m.default || m),
+  "designing-apex-titanium": () => import("@/public/content/posts/designing-apex-titanium.json").then(m => m.default || m),
+  "how-healthcore-ai-works": () => import("@/public/content/posts/how-healthcore-ai-works.json").then(m => m.default || m),
+  "firmware-4-2-sleep-staging": () => import("@/public/content/posts/firmware-4-2-sleep-staging.json").then(m => m.default || m),
+};
 
-// Hardcoded fallback — keeps working if GitHub raw is unreachable
-const FALLBACK_POSTS: PostMeta[] = [
-  { slug: "ecg-smartwatches-2025", title: "ECG Smartwatches: What They Can and Cannot Detect in 2025", excerpt: "From AFib to long QT syndrome — a cardiologist explains what consumer ECG can actually find.", category: "Heart Health", author: "Dr. Tobias Muller", readTime: "8 min", date: "2025-12-02", coverImage: "/generated/blog-cover-ecg.webp" },
-  { slug: "sleep-score-dropped", title: "Why Your Sleep Score Dropped and What to Do About It", excerpt: "Five most common drivers of poor sleep scores and exactly how to fix each one.", category: "Sleep", author: "Dr. Anika Sharma", readTime: "6 min", date: "2025-11-28", coverImage: "/generated/blog-cover-sleep.webp" },
-];
+// Fallback for missing posts
+const FALLBACK_POSTS: PostMeta[] = (postsIndex as PostMeta[]).slice(0, 2);
 
 const _getAllPosts = cache(async (): Promise<PostMeta[]> => {
-  try {
-    const res = await fetch(INDEX_URL, { next: { revalidate } });
-    if (!res.ok) throw new Error("fetch failed");
-    return res.json();
-  } catch {
-    return FALLBACK_POSTS;
-  }
+  return (postsIndex as PostMeta[]) || FALLBACK_POSTS;
 });
 
 const _getPost = cache(async (slug: string): Promise<Post | null> => {
+  const loader = postModules[slug];
+  if (!loader) return null;
   try {
-    const res = await fetch(POST_URL(slug), { next: { revalidate } });
-    if (!res.ok) throw new Error("fetch failed");
-    return res.json();
+    return await loader();
   } catch {
     return null;
   }

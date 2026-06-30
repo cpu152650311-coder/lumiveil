@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect, useCallback, FormEvent } from 'react';
+import Link from 'next/link';
 
-const CONTACT_EMAIL = 'YOUR_EMAIL_HERE';
-const IS_PREVIEW = CONTACT_EMAIL === 'YOUR_EMAIL_HERE';
-const FORM_ENDPOINT = IS_PREVIEW ? '' : `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
+const CONTACT_EMAIL = 'hello@lumivex.com';
+const FORM_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -49,11 +49,6 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
     setErrorMsg('');
     if (!name.trim() || !email.trim()) {
       setErrorMsg('Name and email are required.');
-      return;
-    }
-    if (IS_PREVIEW) {
-      setStatus('success');
-      setErrorMsg('Preview mode: contact email is not configured yet. Add a real email in Phase B to receive inquiries.');
       return;
     }
     setStatus('loading');
@@ -147,10 +142,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 {status === 'loading' ? 'Sending…' : 'Send Message'}
               </button>
               <p className="text-xs text-text-muted text-center">
-                By submitting, you agree to our Privacy Policy. We never share your data.
-              {IS_PREVIEW && (
-                <p className="mt-3 text-xs text-text-muted">Preview mode: inquiries are not sent until a real email is configured.</p>
-              )}
+                By submitting, you agree to our <Link href="/privacy" className="text-primary hover:underline">Privacy Policy</Link>. We never share your data.
               </p>
             </form>
           </>

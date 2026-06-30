@@ -12,9 +12,9 @@ const aiFeatures = [
 ];
 
 const sensors = [
-  { name: 'Single-Lead ECG', icon: '💓', spec: 'FDA-cleared, 98.2% sensitivity', desc: 'Dry electrode sensing with spatio-temporal dynamic filtering. Motion artifact cancellation via accelerometer sync. Alerts within 30 seconds of arrhythmia detection.' },
+  { name: 'Single-Lead ECG', icon: '💓', spec: 'Clinically tested, 98.2% sensitivity', desc: 'Dry electrode sensing with spatio-temporal dynamic filtering. Motion artifact cancellation via accelerometer sync. Alerts within 30 seconds of arrhythmia detection.' },
   { name: 'PPG Heart Rate', icon: '❤️', spec: 'Multi-wavelength, ±2 BPM', desc: 'Green, red, infrared LED matrix. Adaptive sampling: 1Hz at rest to 100Hz during activity. Motion-tolerant across all skin tones.' },
-  { name: 'Cuffless Blood Pressure', icon: '🩸', spec: 'PTT algorithm, validated n=487', desc: 'Pulse Transit Time via ECG-PPG sync. Clinically validated against arterial line. Monthly cuff calibration for optimal accuracy.' },
+  { name: 'Cuffless Blood Pressure', icon: '🩸', spec: 'PTT algorithm, validated n=487', desc: 'Pulse Transit Time via ECG-PPG sync. Lab-validated against arterial line reference. Monthly cuff calibration for optimal accuracy.' },
   { name: 'Blood Oxygen (SpO2)', icon: '🫁', spec: '70-100%, ±1% accuracy', desc: 'Reflective photoelectric sensor with ambient light suppression. Continuous nighttime monitoring with sleep apnea risk scoring.' },
   { name: 'Skin Temperature', icon: '🌡️', spec: '0.05°C resolution', desc: 'Infrared sensor tracks baseline shifts. Illness early-warning, cycle prediction, circadian optimization.' },
   { name: 'Bioimpedance (BIA)', icon: '⚡', spec: 'Body composition + hydration', desc: 'Safe micro-current measures impedance. Estimates fat%, lean mass, hydration index. Long-term trend tracking.' },
@@ -61,8 +61,8 @@ export default function TechnologyPage() {
       <section className="bg-bg-main py-24 px-6">
         <div className="max-w-site mx-auto text-center mb-14">
           <p className="font-outfit text-sm uppercase tracking-widest text-text-muted mb-3">Sensor Suite</p>
-          <h2 className="font-outfit text-3xl font-bold text-text-primary mb-2">Every measurement. Clinical accuracy.</h2>
-          <p className="text-text-muted max-w-2xl mx-auto">Multi-modal fusion combines ECG, PPG, temperature, and motion into a unified health picture. All sensors calibrated against gold-standard instruments in FDA-registered trials.</p>
+          <h2 className="font-outfit text-3xl font-bold text-text-primary mb-2">Every measurement. Precision accuracy.</h2>
+          <p className="text-text-muted max-w-2xl mx-auto">Multi-modal fusion combines ECG, PPG, temperature, and motion into a unified health picture. All sensors calibrated against gold-standard instruments in independently validated trials.</p>
         </div>
         <div className="max-w-site mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {sensors.map((s, i) => (

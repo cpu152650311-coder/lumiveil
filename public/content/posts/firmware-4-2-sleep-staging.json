@@ -1,0 +1,18 @@
+{
+  "slug": "firmware-4-2-sleep-staging",
+  "title": "Firmware 4.2: Sleep Staging, Readiness 2.0, and Three Small Fixes We're Proud Of",
+  "excerpt": "The biggest Lumivex update this year: REM detection, deep sleep tracking, and a readiness score that actually makes sense.",
+  "category": "Product Updates",
+  "author": "Sofia Reyes",
+  "readTime": "4 min",
+  "date": "2025-12-18",
+  "coverImage": "/generated/tech-production-line.webp",
+  "tags": ["firmware", "update", "sleep", "readiness"],
+  "content": "<p>Firmware 4.2 started shipping December 15th. If you haven't updated yet, open the Lumivex app and tap the notification — it takes about 8 minutes. Here's what's new and why we're excited about it.</p><h2>Sleep Staging: REM and Deep Sleep, Finally</h2><p>Until now, Lumivex tracked total sleep duration, awake time, and light sleep. We knew REM and deep sleep staging was the #1 feature request — it's been on our roadmap since day one. The delay wasn't hardware (our sensors were capable). It was validation.</p><p>We refused to ship sleep staging until we could prove it was accurate. Our benchmark was polysomnography (PSG) — the gold-standard sleep lab test with EEG, EOG, and EMG sensors. Against PSG in a 200-person study, Firmware 4.2 achieves:</p><ul><li>Wake detection: 94% agreement with PSG</li><li>REM detection: 87% agreement</li><li>Deep sleep: 85% agreement</li><li>Light sleep: 82% agreement</li></ul><p>Those numbers aren't perfect — no wrist-worn device matches a sleep lab. But they're good enough to give you a meaningful picture of your sleep architecture. You'll see your nightly breakdown in the app starting today.</p><h2>Readiness Score 2.0</h2><p>Honest admission: Readiness 1.0 was too sensitive. A single bad night of sleep could drop your score 30 points, which made the metric feel random. Version 2.0 takes a rolling 7-day weighted average, with more weight on recent nights but enough smoothing that one bad night doesn't tank your score.</p><p>The new algorithm also incorporates HRV trend direction — not just the absolute value. A rising HRV over 3 days is a positive recovery signal even if the absolute number is below your average. That nuance makes the score much more actionable.</p><h2>Three Small Fixes</h2><ol><li><strong>SpO2 sampling rate</strong>: Nighttime SpO2 now samples every 5 minutes instead of 15. Battery impact is negligible (0.3% per night).</li><li><strong>GPS lock time</strong>: Cold start GPS acquisition is ~40% faster thanks to better satellite ephemeris caching.</li><li><strong>Haptic strength</strong>: Added a \"Strong\" haptic option in Settings for people who found the default too subtle.</li></ol><p>Update your watch tonight. Tomorrow morning, check your first sleep stage breakdown. It's wild to actually <em>see</em> your REM cycles.</p>",
+  "metaTitle": "Firmware 4.2: Sleep Staging & Readiness 2.0 | Lumivex Blog",
+  "metaDescription": "Lumivex Firmware 4.2 adds REM/deep sleep staging, a smarter readiness score, faster GPS lock, and stronger haptics. Shipping now.",
+  "faq": [
+    {"question": "How do I update my firmware?", "answer": "Open the Lumivex app, go to Settings → Device → Firmware Update. Ensure your watch has at least 30% battery. The update takes about 8 minutes."},
+    {"question": "Will this update reset my health data?", "answer": "No. All health data, settings, and preferences are preserved through firmware updates."}
+  ]
+}

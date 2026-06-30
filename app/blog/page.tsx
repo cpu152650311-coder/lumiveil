@@ -5,8 +5,6 @@ import FloatingContact from '@/components/sections/FloatingContact';
 import Link from 'next/link';
 import { getPostMetas, PostMeta } from '@/lib/posts';
 
-export const revalidate = 60;
-
 export default async function BlogPage() {
   const posts = await getPostMetas();
   const featured = posts[0];
@@ -68,17 +66,11 @@ export default async function BlogPage() {
                   <ol className="space-y-3">{popular.map((t,i) => (<li key={i} className="flex gap-3 text-sm"><span className="text-accent font-outfit font-bold shrink-0">{i+1}.</span><span className="text-text-muted hover:text-accent transition-colors cursor-pointer leading-snug">{t}</span></li>))}</ol>
                 </div>
                 <div className="bg-accent-light rounded-card border border-accent/20 p-5">
-                  <h3 className="font-outfit font-bold text-text-primary mb-3">Quick Inquiry</h3>
+                  <h3 className="font-outfit font-bold text-text-primary mb-3">Need Help Choosing?</h3>
+                  <p className="text-sm text-text-muted mb-3">Tell us your priorities — we'll recommend the right Lumivex for you.</p>
                   <input type="email" placeholder="Your email" className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-accent focus:outline-none mb-2" />
-                  <textarea rows={2} placeholder="Short question..." className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-accent focus:outline-none resize-none mb-2" />
-                  <button className="btn-accent w-full text-sm py-2.5">Send →</button>
-                </div>
-                <div className="bg-white rounded-card border border-border-light shadow-card p-5 text-center">
-                  <p className="text-sm text-text-muted mb-2">48,000+ subscribers</p>
-                  <p className="font-outfit font-bold text-text-primary text-lg">Weekly Health Brief</p>
-                  <p className="text-xs text-text-muted mt-1 mb-3">Science-backed insights. Zero spam.</p>
-                  <input type="email" placeholder="Your email" className="w-full px-3 py-2 text-xs rounded-lg border border-border-light bg-bg-main focus:border-accent focus:outline-none mb-2" />
-                  <button className="btn-accent w-full text-xs py-2">Subscribe Free</button>
+                  <textarea rows={2} placeholder="What matters most to you in a smartwatch?" className="w-full px-3 py-2.5 text-sm rounded-lg border border-border-light bg-white focus:border-accent focus:outline-none resize-none mb-2" />
+                  <button className="btn-accent w-full text-sm py-2.5">Get a Recommendation →</button>
                 </div>
                 <div className="bg-white rounded-card border border-border-light shadow-card p-5">
                   <h3 className="font-outfit font-bold text-text-primary text-sm mb-3">Featured Product</h3>
@@ -94,7 +86,7 @@ export default async function BlogPage() {
       </section>
 
       <Footer />
-      <FloatingContact label="Subscribe / Inquire" />
+      <FloatingContact label="Ask Us Anything" />
     </>
   );
 }

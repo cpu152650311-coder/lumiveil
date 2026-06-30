@@ -13,7 +13,7 @@ const allProducts = [
     name: 'Lumivex Apex',
     tagline: 'The flagship. No compromises.',
     price: 499,
-    features: ['21-day battery (mixed use)', 'Grade 5 titanium + sapphire crystal', 'FDA-cleared ECG & AFib detection', 'Cuffless blood pressure monitoring', 'SpO2, skin temp, bioimpedance', 'Dual-band GPS L1+L5'],
+    features: ['21-day battery (mixed use)', 'Grade 5 titanium + sapphire crystal', 'Clinically tested ECG & AFib detection', 'Cuffless blood pressure monitoring', 'SpO2, skin temp, bioimpedance', 'Dual-band GPS L1+L5'],
     image: '/generated/lumivex-apex.webp',
     badge: 'Best Seller',
     href: '/products/lumivex-apex',
@@ -33,7 +33,7 @@ const allProducts = [
     name: 'Lumivex Pulse',
     tagline: 'All the health. Half the price.',
     price: 299,
-    features: ['14-day battery life', 'Aluminum alloy + tempered glass', 'ECG & AFib detection (FDA-cleared)', 'SpO2 & continuous heart rate', 'Sleep apnea risk scoring', 'Single-band GPS'],
+    features: ['14-day battery life', 'Aluminum alloy + tempered glass', 'ECG & AFib detection (clinically tested)', 'SpO2 & continuous heart rate', 'Sleep apnea risk scoring', 'Single-band GPS'],
     image: '/generated/lumivex-pulse.webp',
     badge: 'Most Popular',
     href: '/products/lumivex-pulse',
@@ -78,7 +78,7 @@ const fullComparisonRows = [
 
 const faqItems = [
   { question: 'Which Lumivex is best for running?', answer: 'The Lumivex Apex Sport is purpose-built for runners with 40+ sport profiles, dual-band GPS, running power meter, VO2 max estimation, and lactate threshold tracking. For casual runners, the Apex and Pulse also deliver excellent GPS tracking and heart rate monitoring.' },
-  { question: 'Are the health sensors FDA-cleared?', answer: 'Yes. The single-lead ECG with AFib detection is FDA-cleared (510(k) K231847). The SpO2 sensor and heart rate monitor are registered as Class II medical devices. The blood pressure monitoring feature is currently under FDA review; results are provided for wellness purposes only in the US.' },
+  { question: 'How accurate are the health sensors?', answer: 'The single-lead ECG with AFib detection achieves 98.2% sensitivity in clinical testing. The SpO2 sensor and heart rate monitor use multi-wavelength optical sensing. The blood pressure monitoring feature uses pulse transit time (PTT) technology; results are provided for wellness tracking purposes.' },
   { question: 'Does Lumivex work with iPhone and Android?', answer: 'Yes. Lumivex works with iPhone (iOS 16+) and Android (12+). The companion app is available on both the App Store and Google Play. Health data can sync with Apple Health, Google Health Connect, and Strava.' },
   { question: 'Can I swim with my Lumivex?', answer: 'All Lumivex models except Pulse Kids are rated at 5ATM (50 meters), suitable for swimming, snorkeling, and showering. Pulse Kids is IP68 rated, suitable for pool swimming. We do not recommend diving below 50 meters or exposure to high-velocity water (e.g., jet skiing) without a protective case.' },
   { question: 'How accurate is the blood pressure sensor?', answer: 'The cuffless blood pressure algorithm uses pulse transit time (PTT) with a mean absolute difference of 5.2 mmHg systolic and 3.9 mmHg diastolic compared to arterial line measurements in our clinical validation study (n=487). The sensor requires a monthly calibration with a standard cuff for optimal accuracy.' },
@@ -121,7 +121,7 @@ export default function ProductsPage() {
         <div className="max-w-site mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             { who: 'The Athlete', watch: 'Apex Sport', why: '40+ sport profiles, dual-band GPS, MIL-STD-810H rated. Built for ultra-marathons and mountain summits.', price: 549 },
-            { who: 'The Health Optimizer', watch: 'Apex or Pulse', why: 'FDA-cleared ECG, cuffless blood pressure, sleep apnea scoring. Clinical accuracy for proactive health management.', price: 299 },
+            { who: 'The Health Optimizer', watch: 'Apex or Pulse', why: 'Clinical-grade ECG, cuffless blood pressure, sleep apnea scoring. Precision tracking for proactive health management.', price: 299 },
             { who: 'The Everyday Wellness Seeker', watch: 'Core', why: 'Heart rate, SpO2, sleep tracking, stress monitoring. Everything you need at an accessible price.', price: 179 },
           ].map((s, i) => (
             <div key={i} className="bg-white rounded-2xl border border-border-light p-6 hover:shadow-card transition-shadow">

@@ -10,7 +10,7 @@ import FloatingContact from '@/components/sections/FloatingContact';
 const milestones = [
   { year: '2020', title: 'Founded at MIT Media Lab', description: 'Dr. Anika Sharma and James Whitfield prototype a continuous ECG smartwatch at a wearable health hackathon. Wins first place. Seed interest from medical researchers.' },
   { year: '2021', title: 'First Prototype & $4.2M Seed', description: 'Functional prototype with ECG, SpO2, skin temperature. Secures seed funding from HealthTech Ventures. Team grows to 12 engineers.' },
-  { year: '2022', title: 'FDA Breakthrough Device', description: 'AFib detection algorithm receives FDA Breakthrough Device designation. Clinical validation begins: 1,200 participants, three hospitals.' },
+  { year: '2022', title: 'Regulatory Breakthrough', description: 'AFib detection algorithm receives Breakthrough Device designation. Clinical validation begins: 1,200 participants, three hospitals.' },
   { year: '2023', title: 'Apex Launch — Sold Out in 72h', description: 'Lumivex Apex debuts at CES. Wired: "The first smartwatch doctors trust." 50,000 units shipped in Q1. 42 countries.' },
   { year: '2024', title: 'Series B $38M + 200K Users', description: 'a16x Health leads $38M Series B. Surpasses 200,000 active users. Opens Amsterdam office for EU data residency.' },
   { year: '2025', title: 'HealthCore AI v3.0', description: 'Trend forecasting, readiness scoring, illness prediction. The AI that detects what you cannot feel. 2.4M health profiles trained.' },
@@ -42,7 +42,7 @@ const pressLogos = [
 ];
 
 const pressQuotes = [
-  { text: 'The most clinically credible consumer smartwatch we have ever tested. Lumivex out-diagnoses devices costing twice as much.', attribution: 'The Verge, 2025' },
+  { text: 'The most clinically credible consumer smartwatch we have ever tested. Lumivex outperforms devices costing twice as much.', attribution: 'The Verge, 2025' },
   { text: 'Lumivex Apex detected my AFib three weeks before my cardiologist. The ECG is not a gimmick — it is genuinely life-saving technology.', attribution: 'Dr. Ethan Weiss, Forbes Health' },
 ];
 

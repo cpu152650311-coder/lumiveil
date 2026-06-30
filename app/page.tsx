@@ -59,7 +59,7 @@ export default function HomePage() {
       {/* 2 — Trust Bar */}
       <section className="bg-white border-y border-border-light py-10 px-6">
         <div className="max-w-site mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          {[{ v: '$750B', l: 'Smartwatch market by 2026' },{ v: '200K+', l: 'Active users worldwide' },{ v: 'FDA', l: 'Cleared ECG & AFib' },{ v: '98.2%', l: 'AFib detection sensitivity' }].map((s,i) => (
+          {[{ v: '$750B', l: 'Smartwatch market by 2026' },{ v: '200K+', l: 'Active users worldwide' },{ v: 'Clinically', l: 'Tested ECG & AFib' },{ v: '98.2%', l: 'AFib detection sensitivity' }].map((s,i) => (
             <div key={i}><div className="font-outfit text-2xl sm:text-3xl font-extrabold text-accent">{s.v}</div><div className="text-sm text-text-muted mt-1">{s.l}</div></div>
           ))}
         </div>
@@ -124,9 +124,9 @@ export default function HomePage() {
           </blockquote>
           <cite className="block mt-6 not-italic"><span className="font-outfit font-bold text-text-primary">Dr. Priya Mehta</span><span className="text-text-muted text-sm ml-2">Cardiologist, Stanford Medicine</span></cite>
           <div className="flex justify-center gap-8 mt-10 text-sm text-text-muted">
-            <span className="flex items-center gap-1.5"><span className="w-2 h-2 bg-accent rounded-full" /> FDA-Cleared</span>
-            <span className="flex items-center gap-1.5"><span className="w-2 h-2 bg-accent rounded-full" /> HIPAA Compliant</span>
-            <span className="flex items-center gap-1.5"><span className="w-2 h-2 bg-accent rounded-full" /> ISO 13485</span>
+            <span className="flex items-center gap-1.5"><span className="w-2 h-2 bg-accent rounded-full" /> Clinically Tested</span>
+            <span className="flex items-center gap-1.5"><span className="w-2 h-2 bg-accent rounded-full" /> Privacy Certified</span>
+            <span className="flex items-center gap-1.5"><span className="w-2 h-2 bg-accent rounded-full" /> Quality Certified</span>
           </div>
         </div>
       </section>

@@ -39,7 +39,7 @@ const jsonLd = {
   name: 'Lumivex',
   url: 'https://lumivex.com',
   description:
-    'Lumivex smartwatches combine titanium-grade durability, 21-day battery life, and FDA-cleared health sensors with an AI coach that turns raw biometrics into life-changing insights.',
+    'Lumivex smartwatches combine titanium-grade durability, 21-day battery life, and clinically tested health sensors with an AI coach that turns raw biometrics into life-changing insights.',
   foundingDate: '2022',
   contactPoint: {
     '@type': 'ContactPoint',

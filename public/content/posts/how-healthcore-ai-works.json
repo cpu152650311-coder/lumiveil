@@ -1,0 +1,18 @@
+{
+  "slug": "how-healthcore-ai-works",
+  "title": "How HealthCore AI Learns Your Body's Rhythm — And Alerts You Before Something's Wrong",
+  "excerpt": "A deep dive into the on-device AI engine that powers every Lumivex. No cloud. No latency. No privacy tradeoffs.",
+  "category": "Technology",
+  "author": "Dr. Marcus Chen",
+  "readTime": "7 min",
+  "date": "2025-11-08",
+  "coverImage": "/generated/tech-sensor-wafer.webp",
+  "tags": ["AI", "HealthCore", "machine learning", "privacy"],
+  "content": "<p>Most health AI runs in the cloud. Your data leaves your device, travels to a server, gets processed, and sends a result back. That round trip takes 200-800 milliseconds. It also means someone else's computer has your heart rate data.</p><p>We decided that was unacceptable. So we built an AI engine that runs entirely on your wrist.</p><h2>The 72-Hour Learning Window</h2><p>When you first put on a Lumivex, HealthCore AI enters a 72-hour learning phase. It's not idle — it's building your personal baseline. Your resting heart rate range. Your HRV patterns. Your sleep architecture. Your activity signature. Your skin temperature rhythm.</p><p>This is fundamentally different from how most health wearables work. They compare you to population averages. HealthCore compares you to <em>you</em> — specifically, to your last 72 hours of data.</p><p>Why 72 hours? Because that's the minimum window to capture two full sleep cycles plus a workday and a rest day. Any shorter and you miss patterns. Any longer and the model becomes sluggish to real changes.</p><h2>Anomaly Detection, Not Diagnosis</h2><p>Let's be precise about what HealthCore does and doesn't do. It <strong>flags anomalies</strong> — deviations from your personal baseline that cross statistical thresholds. It does <strong>not</strong> diagnose medical conditions. That distinction matters.</p><p>When your resting heart rate spikes 15 BPM above baseline at 3 AM, HealthCore alerts you. That spike could be a fever, dehydration, stress, or the start of something serious. The AI doesn't guess — it surfaces the pattern and lets you (and your doctor) interpret it.</p><p>In our clinical validation with 1,200 participants, HealthCore's AFib detection algorithm achieved 98.2% sensitivity and 97.8% specificity compared to a 12-lead clinical ECG. That's not a replacement for a cardiologist. But it's a very good early warning system.</p><h2>All On-Device. Always.</h2><p>The AI model is about 40MB — small enough to run on a watch chipset. It processes 200 sensor samples per second using a quantized neural network optimized for ARM Cortex-M processors. Raw biometric data never leaves your device unless you explicitly export it.</p><p>Your health data is yours. We built the entire system around that principle.</p>",
+  "metaTitle": "How HealthCore AI Works — On-Device Health Intelligence | Lumivex",
+  "metaDescription": "HealthCore AI runs entirely on your wrist — no cloud, no latency, no privacy tradeoffs. Here's how the 72-hour learning window and anomaly detection work.",
+  "faq": [
+    {"question": "Does HealthCore AI require a subscription?", "answer": "Apex models include 1 year free, Pulse includes 6 months free. After the trial, it's $9.99/month or $89.99/year. Core and Pulse Kids include basic health tracking without the AI coaching features."},
+    {"question": "Can I export my data for my doctor?", "answer": "Yes. The Lumivex app can generate a clinical-format PDF report with any date range and metrics you choose. Share via email, AirDrop, or print."}
+  ]
+}

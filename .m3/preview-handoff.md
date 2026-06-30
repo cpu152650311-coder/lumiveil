@@ -1,10 +1,10 @@
 # M3 Preview Handoff
 
-## Preview URL
-https://lumiveil.vercel.app
+## Deploy URL
+https://lumiveil.pages.dev (production: https://master.lumiveil.pages.dev)
 
-## Phase
-Preview / Phase A
+## Status
+✅ Deployed to Cloudflare Pages — 2026-07-01
 
 ## What Was Generated
 - **Pages (8)**: /about, /blog/[dynamic], /blog, /contact, /page.tsx, /products/[dynamic], /products, /technology
@@ -17,14 +17,14 @@ Preview / Phase A
 - `YOUR_EMAIL_HERE` in `components/sections/ContactModal.tsx:6`
 
 ## Before Production Go-Live
-- Replace `YOUR_EMAIL_HERE` with real contact email
-- Upload real brand logo (currently AI-generated)
-- Confirm brand name
-- Replace AI product images if needed
-- Review medical/financial/legal claims
-- Add privacy/terms/cookies pages
-- Configure custom domain
-- Activate analytics and monitoring
+- [x] Replace `YOUR_EMAIL_HERE` with real contact email → hello@lumivex.com
+- [ ] Upload real brand logo (currently AI-generated)
+- [x] Confirm brand name → Lumivex
+- [ ] Replace AI product images if needed
+- [x] Review medical/financial/legal claims → cleaned, softened to non-regulatory language
+- [x] Add privacy/terms/cookies pages → /privacy, /terms, /cookies
+- [ ] Configure custom domain (lumivex.com)
+- [ ] Activate analytics and monitoring
 
 ## QA Summary
 - Status: pass

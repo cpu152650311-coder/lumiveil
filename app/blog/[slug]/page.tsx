@@ -6,9 +6,9 @@ import Footer from '@/components/sections/Footer';
 import FloatingContact from '@/components/sections/FloatingContact';
 import { getPost, getPostSlugs } from '@/lib/posts';
 
-export const revalidate = 60;
-
 interface Props { params: Promise<{ slug: string }>; }
+
+export const dynamic = 'force-static';
 
 export async function generateStaticParams() {
   const slugs = await getPostSlugs();

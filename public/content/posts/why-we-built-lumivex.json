@@ -1,0 +1,18 @@
+{
+  "slug": "why-we-built-lumivex",
+  "title": "Why We Built Lumivex — A Letter from Our Founders",
+  "excerpt": "Two engineers walk into a hospital waiting room. That's not a joke — it's how Lumivex started.",
+  "category": "Inside Lumivex",
+  "author": "Dr. Anika Sharma & James Whitfield",
+  "readTime": "5 min",
+  "date": "2025-12-15",
+  "coverImage": "/generated/brand-materials-collage.webp",
+  "tags": ["founders", "mission", "health tech"],
+  "content": "<p>It started in a hospital waiting room in Boston, 2020. James was there for his annual physical. Dr. Sharma — Anika — was visiting her father, who had just been admitted for AFib they caught too late. They didn't know each other yet.</p><p>James was wearing the most expensive smartwatch on the market. He'd just finished a 5K that morning. His watch said he was in peak form. The hospital's 12-lead ECG said otherwise: an arrhythmia was hiding in plain sight, invisible to the optical sensor on his wrist.</p><p>Anika saw the watch. She saw the hospital monitor. She saw the gap.</p><p>\"That's when I realized the best consumer wearable on Earth couldn't detect what a $200 clinical ECG catches in five seconds,\" Anika recalls. \"The technology existed. Nobody had put it on a wrist properly.\"</p><p>Six months later, they had a prototype. It was ugly — a breadboard strapped to a wristband with medical tape. But it worked. The dry-electrode single-lead ECG they designed caught AFib with 94% sensitivity on their first 50 test subjects. The algorithm got better every week.</p><p>Lumivex was born from a simple conviction: your watch should know your body as well as your doctor does. Maybe better — because your watch is with you 24/7, and your doctor sees you twice a year.</p><h2>What We Believe</h2><p>Health intelligence is not a luxury. It's not something you should need an $800 budget and a medical degree to access. Core starts at $179 because that belief is not marketing copy — it's why we exist.</p><p>We don't make gadgets. We make guardians — devices that watch over the people who wear them, that catch what human eyes miss, that turn raw biometrics into insights you can actually use.</p><p>200,000 people now wear Lumivex. That's 200,000 people who know their bodies better than they did yesterday. We're just getting started.</p>",
+  "metaTitle": "Why We Built Lumivex — Founders' Letter | Lumivex Blog",
+  "metaDescription": "The story behind Lumivex: two engineers, a hospital waiting room, and a conviction that health intelligence shouldn't cost $800.",
+  "faq": [
+    {"question": "Where is Lumivex based?", "answer": "We're headquartered in Boston, MA, with an engineering office in Amsterdam for EU operations."},
+    {"question": "Are you hiring?", "answer": "Always. Check our careers page or email talent@lumivex.com — we're especially looking for embedded systems engineers and ML researchers."}
+  ]
+}

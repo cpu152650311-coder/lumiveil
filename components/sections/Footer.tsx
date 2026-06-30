@@ -19,6 +19,12 @@ const companyLinks = [
   { label: 'Contact', href: '/contact' },
 ];
 
+const legalLinks = [
+  { label: 'Privacy Policy', href: '/privacy' },
+  { label: 'Terms of Service', href: '/terms' },
+  { label: 'Cookies Policy', href: '/cookies' },
+];
+
 export default function Footer() {
   const [showContact, setShowContact] = useState(false);
 
@@ -44,8 +50,16 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-text-primary mb-4">Company</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 mb-6">
               {companyLinks.map((link, i) => (
+                <li key={i}>
+                  <Link href={link.href} className="text-sm text-text-muted hover:text-primary transition-colors">{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-text-primary mb-3 mt-0">Legal</h4>
+            <ul className="space-y-2">
+              {legalLinks.map((link, i) => (
                 <li key={i}>
                   <Link href={link.href} className="text-sm text-text-muted hover:text-primary transition-colors">{link.label}</Link>
                 </li>
